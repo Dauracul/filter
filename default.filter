@@ -432,6 +432,32 @@ ItemDisplay[SUP NMAG ned !RW]: %BLUE%Sup %GRAY%Overseer Skull%CONTINUE%
 ItemDisplay[SUP NMAG nee !RW]: %BLUE%Sup %GRAY%Succubus Skull%CONTINUE%
 ItemDisplay[SUP NMAG nef !RW]: %BLUE%Sup %GRAY%Bloodlord Skull%CONTINUE%
 
+// Show me Enhanced Damage value on Superior Weapons
+ItemDisplay[SUP NMAG WEAPON ED=5]: %GRAY%(%RED%5%%GRAY%) %NAME%%CONTINUE%
+ItemDisplay[SUP NMAG WEAPON ED=6]: %GRAY%(%RED%6%%GRAY%) %NAME%%CONTINUE%
+ItemDisplay[SUP NMAG WEAPON ED=7]: %GRAY%(%RED%7%%GRAY%) %NAME%%CONTINUE%
+ItemDisplay[SUP NMAG WEAPON ED=8]: %GRAY%(%RED%8%%GRAY%) %NAME%%CONTINUE%
+ItemDisplay[SUP NMAG WEAPON ED=9]: %GRAY%(%RED%9%%GRAY%) %NAME%%CONTINUE%
+ItemDisplay[SUP NMAG WEAPON ED=10]: %GRAY%(%RED%10%%GRAY%) %NAME%%CONTINUE%
+ItemDisplay[SUP NMAG WEAPON ED=11]: %GRAY%(%RED%11%%GRAY%) %NAME%%CONTINUE%
+ItemDisplay[SUP NMAG WEAPON ED=12]: %GRAY%(%RED%12%%GRAY%) %NAME%%CONTINUE%
+ItemDisplay[SUP NMAG WEAPON ED=13]: %GRAY%(%RED%13%%GRAY%) %NAME%%CONTINUE%
+ItemDisplay[SUP NMAG WEAPON ED=14]: %GRAY%(%RED%14%%GRAY%) %NAME%%CONTINUE%
+ItemDisplay[SUP NMAG WEAPON ED=15]: %GRAY%(%RED%15%%GRAY%) %NAME%%CONTINUE%
+
+// Show me Enhanced Defense value on Superior Armors
+ItemDisplay[SUP NMAG ARMOR ED=5]: %GRAY%(%BLUE%5%%GRAY%) %NAME%%CONTINUE%
+ItemDisplay[SUP NMAG ARMOR ED=6]: %GRAY%(%BLUE%6%%GRAY%) %NAME%%CONTINUE%
+ItemDisplay[SUP NMAG ARMOR ED=7]: %GRAY%(%BLUE%7%%GRAY%) %NAME%%CONTINUE%
+ItemDisplay[SUP NMAG ARMOR ED=8]: %GRAY%(%BLUE%8%%GRAY%) %NAME%%CONTINUE%
+ItemDisplay[SUP NMAG ARMOR ED=9]: %GRAY%(%BLUE%9%%GRAY%) %NAME%%CONTINUE%
+ItemDisplay[SUP NMAG ARMOR ED=10]: %GRAY%(%BLUE%10%%GRAY%) %NAME%%CONTINUE%
+ItemDisplay[SUP NMAG ARMOR ED=11]: %GRAY%(%BLUE%11%%GRAY%) %NAME%%CONTINUE%
+ItemDisplay[SUP NMAG ARMOR ED=12]: %GRAY%(%BLUE%12%%GRAY%) %NAME%%CONTINUE%
+ItemDisplay[SUP NMAG ARMOR ED=13]: %GRAY%(%BLUE%13%%GRAY%) %NAME%%CONTINUE%
+ItemDisplay[SUP NMAG ARMOR ED=14]: %GRAY%(%BLUE%14%%GRAY%) %NAME%%CONTINUE%
+ItemDisplay[SUP NMAG ARMOR ED=15]: %GRAY%(%BLUE%15%%GRAY%) %NAME%%CONTINUE%
+
 // Ethereal items
 ItemDisplay[ETH NMAG !RW]: %GRAY%(%TAN%Eth%GRAY%) %GRAY%%NAME%%CONTINUE%
 ItemDisplay[ETH UNI]: %GRAY%(%TAN%Eth%GRAY%) %GOLD%%NAME%%CONTINUE%
@@ -440,15 +466,32 @@ ItemDisplay[ETH MAG]: %GRAY%(%TAN%Eth%GRAY%) %BLUE%%NAME%%CONTINUE%
 ItemDisplay[ETH CRAFT]: %GRAY%(%TAN%Eth%GRAY%) %ORANGE%%NAME%%CONTINUE%
 
 // Number of Sockets
-ItemDisplay[SOCK>0]: %NAME% %GRAY%(%TAN%%SOCKETS%%GRAY%)%CONTINUE%
+ItemDisplay[SOCK>0 !RW]: %NAME% %GRAY%(%TAN%%SOCKETS%%GRAY%)%CONTINUE%
 
 // Rune Notice
 ItemDisplay[RUNE>0 AND RUNE<11]: %DOT-62%%ORANGE%%RUNENAME% Rune %GRAY%(%GREEN%%RUNENUM%%GRAY%)%CONTINUE%
 ItemDisplay[RUNE>10 AND RUNE<21]: %DOT-62%%ORANGE%%RUNENAME% Rune %GRAY%(%GREEN%%RUNENUM%%GRAY%)%CONTINUE%
 ItemDisplay[RUNE>20]: %DOT-62%%ORANGE%%RUNENAME% Rune %GRAY%(%GREEN%%RUNENUM%%GRAY%)%CONTINUE%
 
+// PD2 Items
+
 // WSS and Puzzleboxes
 ItemDisplay[(wss OR lbox OR lpp)]: %DOT-62%%NAME%%CONTINUE%
+
+// Ancient Sigils
+ItemDisplay[(ubaa OR ubab OR ubac)]: %DOT-62%%NAME%%CONTINUE%
+
+// DClone Items
+ItemDisplay[(dcso OR dcbl OR dcho)]: %DOT-62%%NAME%%CONTINUE%
+
+// Rathma Items
+ItemDisplay[(rtmo OR rtmv)]: %DOT-62%%NAME%%CONTINUE%
+
+// Vial of Lightsong
+ItemDisplay[lsvl]: %DOT-62%%NAME%{%NAME%%TAN%(Does not work with Set or Indestructible items)}%CONTINUE%
+
+// Lillith's Mirror
+ItemDisplay[llmr]: %DOT-62%%NAME%{%NAME%%TAN%(Resulting items cannot be Transmuted)}%CONTINUE%
 
 // White Maps Notice
 ItemDisplay[(t11 OR t12 OR t13 OR t14 OR t15 OR t21 OR t22 OR t23 OR t24 OR t25 OR t26 OR t31 OR t32 OR t33 OR t34 OR t35 OR t36 OR t37 OR t38 OR t39) NMAG]: %DOT-62%%ORANGE%%NAME%%CONTINUE%
@@ -531,6 +574,25 @@ ItemDisplay[UNI !ID NORM CLVL<45]: %BORDER-0E%%GOLD%%NAME%%CONTINUE%
 // Any Unidentified Set (Normal early-game)
 ItemDisplay[SET !ID NORM CLVL<45]: %BORDER-84%%GREEN%%NAME%%CONTINUE%
 
+// Upgrade Recipes
+ItemDisplay[SET ARMOR NORM !BOOTS ID]: %NAME%{%NAME%%TAN%(Upgrade to Exceptional: %ORANGE%Tal %TAN%+ %ORANGE%Shael %TAN%+ %WHITE%PDiamond%TAN%)}%CONTINUE%
+ItemDisplay[SET ARMOR EXC !BOOTS ID]: %NAME%{%NAME%%TAN%(Upgrade to Elite: %ORANGE%Ko %TAN%+ %ORANGE%Lem %TAN%+ %WHITE%PDiamond%TAN%)}%CONTINUE%
+
+ItemDisplay[SET BOOTS NORM ID !ASSASSIN]: %NAME%{%NAME%%TAN%(Upgrade to Exceptional: %ORANGE%Tal %TAN%+ %ORANGE%Shael %TAN%+ %WHITE%PDiamond%TAN%)}%CONTINUE%
+ItemDisplay[SET BOOTS EXC ID !ASSASSIN]: %NAME%{%NAME%%TAN%(Upgrade to Elite: %ORANGE%Ko %TAN%+ %ORANGE%Lem %TAN%+ %WHITE%PDiamond%TAN%)}%CONTINUE%
+ItemDisplay[SET BOOTS NORM ID ASSASSIN]: %NAME%{%NAME%%TAN%(Upgrade to Exceptional: %ORANGE%Tal %TAN%+ %ORANGE%Shael %TAN%+ %WHITE%PDiamond%TAN%)%NL%}%CONTINUE%
+ItemDisplay[SET BOOTS EXC ID ASSASSIN]: %NAME%{%NAME%%TAN%(Upgrade to Elite: %ORANGE%Ko %TAN%+ %ORANGE%Lem %TAN%+ %WHITE%PDiamond%TAN%)%NL%}%CONTINUE%
+
+ItemDisplay[UNI ARMOR NORM ID]: %NAME%{%NAME%%TAN%(Upgrade to Exceptional: %ORANGE%Tal %TAN%+ %ORANGE%Shael %TAN%+ %WHITE%PDiamond%TAN%)}%CONTINUE%
+ItemDisplay[UNI ARMOR EXC ID]: %NAME%{%NAME%%TAN%(Upgrade to Elite: %ORANGE%Ko %TAN%+ %ORANGE%Lem %TAN%+ %WHITE%PDiamond%TAN%)}%CONTINUE%
+ItemDisplay[(SET OR UNI) WEAPON NORM ID]: %NAME%{%NAME%%TAN%(Upgrade to Exceptional: %ORANGE%Ral %TAN%+ %ORANGE%Sol %TAN%+ %GREEN%PEmerald%TAN%)%NL%}%CONTINUE%
+ItemDisplay[(SET OR UNI) WEAPON EXC ID]: %NAME%{%NAME%%TAN%(Upgrade to Elite: %ORANGE%Lum %TAN%+ %ORANGE%Pul %TAN%+ %GREEN%PEmerald%TAN%)%NL%}%CONTINUE%
+
+ItemDisplay[(RARE OR CRAFT) ARMOR NORM ID]: %NAME%{%NAME%%TAN%(Upgrade to Exceptional: %ORANGE%Ral %TAN%+ %ORANGE%Thul %TAN%+ %PURPLE%PAmethyst%TAN%)}%CONTINUE%
+ItemDisplay[(RARE OR CRAFT) ARMOR EXC ID]: %NAME%{%NAME%%TAN%(Upgrade to Elite: %ORANGE%Ko %TAN%+ %ORANGE%Pul %TAN%+ %PURPLE%PAmethyst%TAN%)}%CONTINUE%
+ItemDisplay[(RARE OR CRAFT) WEAPON NORM ID]: %NAME%{%NAME%%TAN%(Upgrade to Exceptional: %ORANGE%Ort %TAN%+ %ORANGE%Amn %TAN%+ %BLUE%PSapphire%TAN%)%NL%}%CONTINUE%
+ItemDisplay[(RARE OR CRAFT) WEAPON EXC ID]: %NAME%{%NAME%%TAN%(Upgrade to Elite: %ORANGE%Fal %TAN%+ %ORANGE%Um %TAN%+ %BLUE%PSapphire%TAN%)%NL%}%CONTINUE%
+
 // [=|| DRUID ||=]
 
 // Open brackets on Clubs/Pelts with Staffmods
@@ -549,9 +611,9 @@ ItemDisplay[NMAG SOCK=2 !RW SK222=3]: %NAME%%GREEN%+3%TAN%poisc%CONTINUE%
 ItemDisplay[NMAG SOCK=3 !RW SK222=3]: %NAME%%GREEN%+3%TAN%poisc%CONTINUE%
 
 // Clubs/Pelts with +3 skills to Werewolf
-ItemDisplay[NMAG SOCK=0 !RW SK223=3]: %NAME%%GREEN%+3%TAN%ww%CONTINUE%
-ItemDisplay[NMAG SOCK=2 !RW SK223=3]: %NAME%%GREEN%+3%TAN%ww%CONTINUE%
-ItemDisplay[NMAG SOCK=3 !RW SK223=3]: %NAME%%GREEN%+3%TAN%ww%CONTINUE%
+ItemDisplay[NMAG SOCK=0 !RW SK223=3]: %NAME%%GREEN%+3%TAN%wwolf%CONTINUE%
+ItemDisplay[NMAG SOCK=2 !RW SK223=3]: %NAME%%GREEN%+3%TAN%wwolf%CONTINUE%
+ItemDisplay[NMAG SOCK=3 !RW SK223=3]: %NAME%%GREEN%+3%TAN%wwolf%CONTINUE%
 
 // Clubs/Pelts with +3 skills to Lycanthropy
 ItemDisplay[NMAG SOCK=0 !RW SK224=3]: %NAME%%GREEN%+3%TAN%lyc%CONTINUE%
@@ -574,9 +636,9 @@ ItemDisplay[NMAG SOCK=2 !RW SK227=3]: %NAME%%GREEN%+3%TAN%sprtw%CONTINUE%
 ItemDisplay[NMAG SOCK=3 !RW SK227=3]: %NAME%%GREEN%+3%TAN%sprtw%CONTINUE%
 
 // Clubs/Pelts with +3 skills to Werebear
-ItemDisplay[NMAG SOCK=0 !RW SK228=3]: %NAME%%GREEN%+3%TAN%wb%CONTINUE%
-ItemDisplay[NMAG SOCK=2 !RW SK228=3]: %NAME%%GREEN%+3%TAN%wb%CONTINUE%
-ItemDisplay[NMAG SOCK=3 !RW SK228=3]: %NAME%%GREEN%+3%TAN%wb%CONTINUE%
+ItemDisplay[NMAG SOCK=0 !RW SK228=3]: %NAME%%GREEN%+3%TAN%wbear%CONTINUE%
+ItemDisplay[NMAG SOCK=2 !RW SK228=3]: %NAME%%GREEN%+3%TAN%wbear%CONTINUE%
+ItemDisplay[NMAG SOCK=3 !RW SK228=3]: %NAME%%GREEN%+3%TAN%wbear%CONTINUE%
 
 // Clubs/Pelts with +3 skills to Molten Boulder
 ItemDisplay[NMAG SOCK=0 !RW SK229=3]: %NAME%%GREEN%+3%TAN%bldr%CONTINUE%
@@ -1418,8 +1480,8 @@ ItemDisplay[NMAG SOCK=0 !RW SK54=3]: %NAME%%GREEN%+3%TAN%tele%CONTINUE%
 ItemDisplay[NMAG SOCK>1 !RW SK54=3]: %NAME%%GREEN%+3%TAN%tele%CONTINUE%
 
 // Staves/Orbs with +3 skills to Glacial Spike
-ItemDisplay[NMAG SOCK=0 !RW SK55=3]: %NAME%%GREEN%+3%TAN%gspk%CONTINUE%
-ItemDisplay[NMAG SOCK>1 !RW SK55=3]: %NAME%%GREEN%+3%TAN%gspk%CONTINUE%
+ItemDisplay[NMAG SOCK=0 !RW SK55=3]: %NAME%%GREEN%+3%TAN%glac%CONTINUE%
+ItemDisplay[NMAG SOCK>1 !RW SK55=3]: %NAME%%GREEN%+3%TAN%glac%CONTINUE%
 
 // Staves/Orbs with +3 skills to Meteor
 ItemDisplay[NMAG SOCK=0 !RW SK56=3]: %NAME%%GREEN%+3%TAN%mtr%CONTINUE%
@@ -1450,8 +1512,8 @@ ItemDisplay[NMAG SOCK=0 !RW SK62=3]: %NAME%%GREEN%+3%TAN%hdra%CONTINUE%
 ItemDisplay[NMAG SOCK>1 !RW SK62=3]: %NAME%%GREEN%+3%TAN%hdra%CONTINUE%
 
 // Staves/Orbs with +3 skills to Lighting Mastery
-ItemDisplay[NMAG SOCK=0 !RW SK63=3]: %NAME%%GREEN%+3%TAN%litem%CONTINUE%
-ItemDisplay[NMAG SOCK>1 !RW SK63=3]: %NAME%%GREEN%+3%TAN%litem%CONTINUE%
+ItemDisplay[NMAG SOCK=0 !RW SK63=3]: %NAME%%GREEN%+3%TAN%litm%CONTINUE%
+ItemDisplay[NMAG SOCK>1 !RW SK63=3]: %NAME%%GREEN%+3%TAN%litm%CONTINUE%
 
 // Staves/Orbs with +3 skills to Frozen Orb
 ItemDisplay[NMAG SOCK=0 !RW SK64=3]: %NAME%%GREEN%+3%TAN%forb%CONTINUE%
@@ -1466,8 +1528,8 @@ ItemDisplay[NMAG SOCK=0 !RW SK369=3]: %NAME%%GREEN%+3%TAN%ibrrg%CONTINUE%
 ItemDisplay[NMAG SOCK>1 !RW SK369=3]: %NAME%%GREEN%+3%TAN%ibrrg%CONTINUE%
 
 // Staves/Orbs with +3 skills to Combustion
-ItemDisplay[NMAG SOCK=0 !RW SK376=3]: %NAME%%GREEN%+3%TAN%cbst%CONTINUE%
-ItemDisplay[NMAG SOCK>1 !RW SK376=3]: %NAME%%GREEN%+3%TAN%cbst%CONTINUE%
+ItemDisplay[NMAG SOCK=0 !RW SK376=3]: %NAME%%GREEN%+3%TAN%comb%CONTINUE%
+ItemDisplay[NMAG SOCK>1 !RW SK376=3]: %NAME%%GREEN%+3%TAN%comb%CONTINUE%
 
 // Staves/Orbs with +3 skills to Lesser Hydra
 ItemDisplay[NMAG SOCK=0 !RW SK383=3]: %NAME%%GREEN%+3%TAN%lhdra%CONTINUE%
@@ -1779,8 +1841,8 @@ ItemDisplay[NMAG SOCK=0 !RW TABSK0=3]: %NAME%%GREEN%+3%TAN%bow%CONTINUE%
 ItemDisplay[NMAG SOCK>1 !RW TABSK0=3]: %NAME%%GREEN%+3%TAN%bow%CONTINUE%
 
 // Amazon Weapons with +3 Javelin and Spear
-ItemDisplay[NMAG SOCK=0 !RW TABSK0=3]: %NAME%%GREEN%+3%TAN%jav%CONTINUE%
-ItemDisplay[NMAG SOCK>1 !RW TABSK0=3]: %NAME%%GREEN%+3%TAN%jav%CONTINUE%
+ItemDisplay[NMAG SOCK=0 !RW TABSK2=3]: %NAME%%GREEN%+3%TAN%jav%CONTINUE%
+ItemDisplay[NMAG SOCK>1 !RW TABSK2=3]: %NAME%%GREEN%+3%TAN%jav%CONTINUE%
 
 // Closing brackets on Amazon Weapons with Staffmods
 ItemDisplay[NMAG SOCK=0 !RW (TABSK2=3 OR TABSK0=3)]: %WHITE%%NAME%%GRAY%)%CONTINUE%
@@ -1789,31 +1851,6 @@ ItemDisplay[NMAG SOCK>1 !RW (TABSK2=3 OR TABSK0=3)]: %GRAY%%NAME%%GRAY%)%CONTINU
 
 // [=|| MISC ||=]
 
-// Show me Enhanced Damage value on Superior Weapons
-ItemDisplay[SUP NMAG WEAPON ED=5]: %GRAY%(%RED%5%%GRAY%) %NAME%%CONTINUE%
-ItemDisplay[SUP NMAG WEAPON ED=6]: %GRAY%(%RED%6%%GRAY%) %NAME%%CONTINUE%
-ItemDisplay[SUP NMAG WEAPON ED=7]: %GRAY%(%RED%7%%GRAY%) %NAME%%CONTINUE%
-ItemDisplay[SUP NMAG WEAPON ED=8]: %GRAY%(%RED%8%%GRAY%) %NAME%%CONTINUE%
-ItemDisplay[SUP NMAG WEAPON ED=9]: %GRAY%(%RED%9%%GRAY%) %NAME%%CONTINUE%
-ItemDisplay[SUP NMAG WEAPON ED=10]: %GRAY%(%RED%10%%GRAY%) %NAME%%CONTINUE%
-ItemDisplay[SUP NMAG WEAPON ED=11]: %GRAY%(%RED%11%%GRAY%) %NAME%%CONTINUE%
-ItemDisplay[SUP NMAG WEAPON ED=12]: %GRAY%(%RED%12%%GRAY%) %NAME%%CONTINUE%
-ItemDisplay[SUP NMAG WEAPON ED=13]: %GRAY%(%RED%13%%GRAY%) %NAME%%CONTINUE%
-ItemDisplay[SUP NMAG WEAPON ED=14]: %GRAY%(%RED%14%%GRAY%) %NAME%%CONTINUE%
-ItemDisplay[SUP NMAG WEAPON ED=15]: %GRAY%(%RED%15%%GRAY%) %NAME%%CONTINUE%
-
-// Show me Enhanced Defense value on Superior Armors
-ItemDisplay[SUP NMAG ARMOR ED=5]: %GRAY%(%BLUE%5%%GRAY%) %NAME%%CONTINUE%
-ItemDisplay[SUP NMAG ARMOR ED=6]: %GRAY%(%BLUE%6%%GRAY%) %NAME%%CONTINUE%
-ItemDisplay[SUP NMAG ARMOR ED=7]: %GRAY%(%BLUE%7%%GRAY%) %NAME%%CONTINUE%
-ItemDisplay[SUP NMAG ARMOR ED=8]: %GRAY%(%BLUE%8%%GRAY%) %NAME%%CONTINUE%
-ItemDisplay[SUP NMAG ARMOR ED=9]: %GRAY%(%BLUE%9%%GRAY%) %NAME%%CONTINUE%
-ItemDisplay[SUP NMAG ARMOR ED=10]: %GRAY%(%BLUE%10%%GRAY%) %NAME%%CONTINUE%
-ItemDisplay[SUP NMAG ARMOR ED=11]: %GRAY%(%BLUE%11%%GRAY%) %NAME%%CONTINUE%
-ItemDisplay[SUP NMAG ARMOR ED=12]: %GRAY%(%BLUE%12%%GRAY%) %NAME%%CONTINUE%
-ItemDisplay[SUP NMAG ARMOR ED=13]: %GRAY%(%BLUE%13%%GRAY%) %NAME%%CONTINUE%
-ItemDisplay[SUP NMAG ARMOR ED=14]: %GRAY%(%BLUE%14%%GRAY%) %NAME%%CONTINUE%
-ItemDisplay[SUP NMAG ARMOR ED=15]: %GRAY%(%BLUE%15%%GRAY%) %NAME%%CONTINUE%
 
 // Cube Recipes to add Sockets
 
