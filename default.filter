@@ -3192,5 +3192,5 @@ ItemDisplay[GOLD<100 CLVL<18]:
 ItemDisplay[GOLD<1000 (CLVL>17 AND CLVL<80)]:
 ItemDisplay[GOLD<5000 CLVL>79]:
 
-// Hide all Normal and Exceptional items in Maps (Except uniques/sets)
-ItemDisplay[(NORM OR EXC) !UNI !SET MAPID>137]:
+// Hide all Normal and Exceptional items in Maps (Except uniques/sets/magic/rare)
+ItemDisplay[(NORM OR EXC) NMAG MAPID>137]:
