@@ -494,67 +494,72 @@ ItemDisplay[lsvl]: %DOT-62%%NAME%{%NAME%%TAN%(Does not work with Set or Indestru
 ItemDisplay[llmr]: %DOT-62%%NAME%{%NAME%%TAN%(Resulting items cannot be Transmuted)}%CONTINUE%
 
 // White Maps Notice
-ItemDisplay[(t11 OR t12 OR t13 OR t14 OR t15 OR t21 OR t22 OR t23 OR t24 OR t25 OR t26 OR t31 OR t32 OR t33 OR t34 OR t35 OR t36 OR t37 OR t38 OR t39) NMAG]: %DOT-62%%ORANGE%%NAME%%CONTINUE%
+ItemDisplay[(t11 OR t12 OR t13 OR t14 OR t15 OR t16 OR t21 OR t22 OR t23 OR t24 OR t25 OR t26 OR t31 OR t32 OR t33 OR t34 OR t35 OR t36 OR t37 OR t38 OR t39 OR t3a) NMAG]: %DOT-62%%ORANGE%%NAME%%CONTINUE%
 
 // Immunes on Maps
 
 //Ruins of Viz-Jun
-ItemDisplay[t11 (MAG OR RARE)]: %NAME%{%NAME%%TAN%(Immunity % Values In %GREEN%Green %TAN%Are Breakable With Infinity)%NL%%ORANGE%Magic: %GRAY%(%WHITE%100%%GRAY%) %RED%Fire: %GRAY%(%WHITE%145%%GRAY%) %YELLOW%Light: %GRAY%(%GREEN%120%%GRAY%) %BLUE%Cold: %GRAY%(%WHITE%160%%GRAY%) %GREEN%Poison: %GRAY%(%WHITE%120%%GRAY%)%NL%%WHITE%Highest Immunities:}%CONTINUE%
+ItemDisplay[t11 (MAG OR RARE)]: %NAME%{%NAME%%TAN%(Immunity % Values In %DARK_GREEN%Green %TAN%Are Breakable With Infinity)%NL%%YELLOW%Light: %GRAY%(%DARK_GREEN%120%%GRAY%) %GREEN%Poison: %GRAY%(%WHITE%120%%GRAY%)%NL%%WHITE%Highest Immunities:}%CONTINUE%
 
 //Horazon's Memory
-ItemDisplay[t12 (MAG OR RARE)]: %NAME%{%NAME%%TAN%(Immunity % Values In %GREEN%Green %TAN%Are Breakable With Infinity)%NL%%RED%Fire: %GRAY%(%WHITE%135%%GRAY%) %YELLOW%Light: %GRAY%(%GREEN%100%%GRAY%) %GREEN%Poison: %GRAY%(%WHITE%120%%GRAY%)%NL%%WHITE%Highest Immunities:}%CONTINUE%
+ItemDisplay[t12 (MAG OR RARE)]: %NAME%{%NAME%%TAN%(Immunity % Values In %DARK_GREEN%Green %TAN%Are Breakable With Infinity)%NL%%RED%Fire: %GRAY%(%WHITE%135%%GRAY%) %GREEN%Poison: %GRAY%(%WHITE%120%%GRAY%)%NL%%WHITE%Highest Immunities:}%CONTINUE%
 
 //Bastion Keep
-ItemDisplay[t13 (MAG OR RARE)]: %NAME%{%NAME%%TAN%(Immunity % Values In %GREEN%Green %TAN%Are Breakable With Infinity)%NL%%RED%Fire: %GRAY%(%GREEN%120%%GRAY%) %YELLOW%Light: %GRAY%(%WHITE%135%%GRAY%) %GREEN%Poison: %GRAY%(%WHITE%120%%GRAY%)%NL%%WHITE%Highest Immunities:}%CONTINUE%
+ItemDisplay[t13 (MAG OR RARE)]: %NAME%{%NAME%%TAN%(Immunity % Values In %DARK_GREEN%Green %TAN%Are Breakable With Infinity)%NL%%GOLD%Phys: %GRAY%(%WHITE%110%%GRAY%) %YELLOW%Light: %GRAY%(%WHITE%135%%GRAY%) %NL%%WHITE%Highest Immunities:}%CONTINUE%
 
 //Sanatorium
-ItemDisplay[t14 (MAG OR RARE)]: %NAME%{%NAME%%TAN%(Immunity % Values In %GREEN%Green %TAN%Are Breakable With Infinity)%NL%%RED%Fire: %GRAY%(%GREEN%130%%GRAY%) %BLUE%Cold: %GRAY%(%GREEN%130%%GRAY%) %GREEN%Poison: %GRAY%(%WHITE%140%%GRAY%)%NL%%WHITE%Highest Immunities:}%CONTINUE%
+ItemDisplay[t14 (MAG OR RARE)]: %NAME%{%NAME%%TAN%(Immunity % Values In %DARK_GREEN%Green %TAN%Are Breakable With Infinity)%NL%%RED%Fire: %GRAY%(%DARK_GREEN%130%%GRAY%) %BLUE%Cold: %GRAY%(%DARK_GREEN%130%%GRAY%)%NL%%WHITE%Highest Immunities:}%CONTINUE%
 
 //Royal Crypts
-ItemDisplay[t15 (MAG OR RARE)]: %NAME%{%NAME%%TAN%(Immunity % Values In %GREEN%Green %TAN%Are Breakable With Infinity)%NL%%GOLD%Phys: %GRAY%(%WHITE%105%%GRAY%) %ORANGE%Magic: %GRAY%(%WHITE%150%%GRAY%) %YELLOW%Light: %GRAY%(%GREEN%100%%GRAY%) %GREEN%Poison: %GRAY%(%WHITE%105%%GRAY%)%NL%%WHITE%Highest Immunities:}%CONTINUE%
+ItemDisplay[t15 (MAG OR RARE)]: %NAME%{%NAME%%TAN%(Immunity % Values In %DARK_GREEN%Green %TAN%Are Breakable With Infinity)%NL%%ORANGE%Magic: %GRAY%(%WHITE%150%%GRAY%) %YELLOW%Light: %GRAY%(%DARK_GREEN%100%%GRAY%) %GREEN%Poison: %GRAY%(%WHITE%105%%GRAY%)%NL%%WHITE%Highest Immunities:}%CONTINUE%
+
+//Ruined Cistern
+ItemDisplay[t16 (MAG OR RARE)]: %NAME%{%NAME%%TAN%(Immunity % Values In %DARK_GREEN%Green %TAN%Are Breakable With Infinity)%NL%%ORANGE%Magic: %GRAY%(%WHITE%125%%GRAY%) %BLUE%Cold: %GRAY%(%DARK_GREEN%115%%GRAY%) %GREEN%Poison: %GRAY%(%WHITE%140%%GRAY%)%NL%%WHITE%Highest Immunities:}%CONTINUE%
 
 //Pthlegethon
-ItemDisplay[t21 (MAG OR RARE)]: %NAME%{%NAME%%TAN%(Immunity % Values In %GREEN%Green %TAN%Are Breakable With Infinity)%NL%%RED%Fire: %GRAY%(%WHITE%140%%GRAY%) %YELLOW%Light: %GRAY%(%GREEN%120%%GRAY%) %GREEN%Poison: %GRAY%(%WHITE%120%%GRAY%)%NL%%WHITE%Highest Immunities:}%CONTINUE%
+ItemDisplay[t21 (MAG OR RARE)]: %NAME%{%NAME%%TAN%(Immunity % Values In %DARK_GREEN%Green %TAN%Are Breakable With Infinity)%NL%%RED%Fire: %GRAY%(%WHITE%140%%GRAY%) %GREEN%Poison: %GRAY%(%WHITE%120%%GRAY%)%NL%%WHITE%Highest Immunities:}%CONTINUE%
 
 //Torajan Jungle
-ItemDisplay[t22 (MAG OR RARE)]: %NAME%{%NAME%%TAN%(Immunity % Values In %GREEN%Green %TAN%Are Breakable With Infinity)%NL%%YELLOW%Light: %GRAY%(%GREEN%105%%GRAY%) %BLUE%Cold: %GRAY%(%WHITE%140%%GRAY%) %GREEN%Poison: %GRAY%(%WHITE%100%%GRAY%)%NL%%WHITE%Highest Immunities:}%CONTINUE%
+ItemDisplay[t22 (MAG OR RARE)]: %NAME%{%NAME%%TAN%(Immunity % Values In %DARK_GREEN%Green %TAN%Are Breakable With Infinity)%NL%%YELLOW%Light: %GRAY%(%DARK_GREEN%105%%GRAY%) %BLUE%Cold: %GRAY%(%WHITE%140%%GRAY%)%NL%%WHITE%Highest Immunities:}%CONTINUE%
 
 //Arreat Battlefield
-ItemDisplay[t23 (MAG OR RARE)]: %NAME%{%NAME%%TAN%(Immunity % Values In %GREEN%Green %TAN%Are Breakable With Infinity)%NL%%RED%Fire: %GRAY%(%GREEN%130%%GRAY%) %YELLOW%Light: %GRAY%(%GREEN%100%%GRAY%) %GREEN%Poison: %GRAY%(%WHITE%115%%GRAY%)%NL%%WHITE%Highest Immunities:}%CONTINUE%
+ItemDisplay[t23 (MAG OR RARE)]: %NAME%{%NAME%%TAN%(Immunity % Values In %DARK_GREEN%Green %TAN%Are Breakable With Infinity)%NL%%RED%Fire: %GRAY%(%DARK_GREEN%130%%GRAY%) %YELLOW%Light: %GRAY%(%DARK_GREEN%100%%GRAY%)%NL%%WHITE%Highest Immunities:}%CONTINUE%
 
 //Tomb of Zoltun Kulle
-ItemDisplay[t24 (MAG OR RARE)]: %NAME%{%NAME%%TAN%(Immunity % Values In %GREEN%Green %TAN%Are Breakable With Infinity)%NL%%GOLD%Phys: %GRAY%(%WHITE%105%%GRAY%) %YELLOW%Light: %GRAY%(%GREEN%120%%GRAY%) %BLUE%Cold: %GRAY%(%WHITE%150%%GRAY%) %GREEN%Poison: %GRAY%(%WHITE%110%%GRAY%)%NL%%WHITE%Highest Immunities:}%CONTINUE%
+ItemDisplay[t24 (MAG OR RARE)]: %NAME%{%NAME%%TAN%(Immunity % Values In %DARK_GREEN%Green %TAN%Are Breakable With Infinity)%NL%%GOLD%Phys: %GRAY%(%WHITE%105%%GRAY%) %YELLOW%Light: %GRAY%(%DARK_GREEN%120%%GRAY%) %GREEN%Poison: %GRAY%(%WHITE%110%%GRAY%)%NL%%WHITE%Highest Immunities:}%CONTINUE%
 
 //Sewers of Harrogath
-ItemDisplay[t25 (MAG OR RARE)]: %NAME%{%NAME%%TAN%(Immunity % Values In %GREEN%Green %TAN%Are Breakable With Infinity)%NL%%RED%Fire: %GRAY%(%GREEN%125%%GRAY%) %YELLOW%Light: %GRAY%(%WHITE%135%%GRAY%) %GREEN%Poison: %GRAY%(%WHITE%110%%GRAY%)%NL%%WHITE%Highest Immunities:}%CONTINUE%
+ItemDisplay[t25 (MAG OR RARE)]: %NAME%{%NAME%%TAN%(Immunity % Values In %DARK_GREEN%Green %TAN%Are Breakable With Infinity)%NL%%RED%Fire: %GRAY%(%DARK_GREEN%125%%GRAY%) %YELLOW%Light: %GRAY%(%WHITE%135%%GRAY%)%NL%%WHITE%Highest Immunities:}%CONTINUE%
 
 //Shadows of Westmarch
-ItemDisplay[t26 (MAG OR RARE)]: %NAME%{%NAME%%TAN%(Immunity % Values In %GREEN%Green %TAN%Are Breakable With Infinity)%NL%%GOLD%Phys: %GRAY%(%WHITE%100%%GRAY%) %ORANGE%Magic: %GRAY%(%WHITE%120%%GRAY%) %RED%Fire: %GRAY%(%GREEN%110%%GRAY%) %BLUE%Cold: %GRAY%(%WHITE%150%%GRAY%)%NL%%WHITE%Highest Immunities:}%CONTINUE%
+ItemDisplay[t26 (MAG OR RARE)]: %NAME%{%NAME%%TAN%(Immunity % Values In %DARK_GREEN%Green %TAN%Are Breakable With Infinity)%NL%%GOLD%Phys: %GRAY%(%WHITE%100%%GRAY%) %RED%Fire: %GRAY%(%DARK_GREEN%110%%GRAY%) %BLUE%Cold: %GRAY%(%WHITE%150%%GRAY%)%NL%%WHITE%Highest Immunities:}%CONTINUE%
 
 //River of Blood
-ItemDisplay[t31 (MAG OR RARE)]: %NAME%{%NAME%%TAN%(Immunity % Values In %GREEN%Green %TAN%Are Breakable With Infinity)%NL%%ORANGE%Magic: %GRAY%(%WHITE%100%%GRAY%) %RED%Fire: %GRAY%(%GREEN%125%%GRAY%) %YELLOW%Light: %GRAY%(%GREEN%120%%GRAY%) %BLUE%Cold: %GRAY%(%WHITE%180%%GRAY%)%NL%%WHITE%Highest Immunities:}%CONTINUE%
+ItemDisplay[t31 (MAG OR RARE)]: %NAME%{%NAME%%TAN%(Immunity % Values In %DARK_GREEN%Green %TAN%Are Breakable With Infinity)%NL%%ORANGE%Magic: %GRAY%(%WHITE%100%%GRAY%) %RED%Fire: %GRAY%(%DARK_GREEN%125%%GRAY%) %BLUE%Cold: %GRAY%(%WHITE%180%%GRAY%)%NL%%WHITE%Highest Immunities:}%CONTINUE%
 
 //Throne of Insanity
-ItemDisplay[t32 (MAG OR RARE)]: %NAME%{%NAME%%TAN%(Immunity % Values In %GREEN%Green %TAN%Are Breakable With Infinity)%NL%%RED%Fire: %GRAY%(%GREEN%130%%GRAY%) %YELLOW%Light: %GRAY%(%GREEN%120%%GRAY%) %BLUE%Cold: %GRAY%(%GREEN%125%%GRAY%) %GREEN%Poison: %GRAY%(%WHITE%115%%GRAY%)%NL%%WHITE%Highest Immunities:}%CONTINUE%
+ItemDisplay[t32 (MAG OR RARE)]: %NAME%{%NAME%%TAN%(Immunity % Values In %DARK_GREEN%Green %TAN%Are Breakable With Infinity)%NL%%RED%Fire: %GRAY%(%DARK_GREEN%130%%GRAY%) %GREEN%Poison: %GRAY%(%WHITE%115%%GRAY%)%NL%%WHITE%Highest Immunities:}%CONTINUE%
 
 //Lost Temple
-ItemDisplay[t33 (MAG OR RARE)]: %NAME%{%NAME%%TAN%(Immunity % Values In %GREEN%Green %TAN%Are Breakable With Infinity)%NL%%ORANGE%Magic: %GRAY%(%WHITE%100%%GRAY%) %RED%Fire: %GRAY%(%GREEN%120%%GRAY%) %YELLOW%Light: %GRAY%(%GREEN%115%%GRAY%) %BLUE%Cold: %GRAY%(%GREEN%110%%GRAY%) %GREEN%Poison: %GRAY%(%WHITE%120%%GRAY%)%NL%%WHITE%Highest Immunities:}%CONTINUE%
+ItemDisplay[t33 (MAG OR RARE)]: %NAME%{%NAME%%TAN%(Immunity % Values In %DARK_GREEN%Green %TAN%Are Breakable With Infinity)%NL%%RED%Fire: %GRAY%(%DARK_GREEN%120%%GRAY%) %YELLOW%Light: %GRAY%(%DARK_GREEN%115%%GRAY%)%NL%%WHITE%Highest Immunities:}%CONTINUE%
 
 //Ancestral Trial
-ItemDisplay[t34 (MAG OR RARE)]: %NAME%{%NAME%%TAN%(Immunity % Values In %GREEN%Green %TAN%Are Breakable With Infinity)%NL%%GOLD%Phys: %GRAY%(%WHITE%100%%GRAY%) %RED%Fire: %GRAY%(%GREEN%120%%GRAY%) %YELLOW%Light: %GRAY%(%GREEN%110%%GRAY%) %GREEN%Poison: %GRAY%(%WHITE%120%%GRAY%)%NL%%WHITE%Highest Immunities:}%CONTINUE%
+ItemDisplay[t34 (MAG OR RARE)]: %NAME%{%NAME%%TAN%(Immunity % Values In %DARK_GREEN%Green %TAN%Are Breakable With Infinity)%NL%%GOLD%Phys: %GRAY%(%WHITE%100%%GRAY%) %RED%Fire: %GRAY%(%DARK_GREEN%120%%GRAY%) %GREEN%Poison: %GRAY%(%WHITE%120%%GRAY%)%NL%%WHITE%Highest Immunities:}%CONTINUE%
 
 //Fall of Caldeum
-ItemDisplay[t36 (MAG OR RARE)]: %NAME%{%NAME%%TAN%(Immunity % Values In %GREEN%Green %TAN%Are Breakable With Infinity)%NL%YELLOW%Light: %GRAY%(%GREEN%100%%GRAY%) %BLUE%Cold: %GRAY%(%WHITE%140%%GRAY%) %GREEN%Poison: %GRAY%(%WHITE%110%%GRAY%)%NL%%WHITE%Highest Immunities:}%CONTINUE%
+ItemDisplay[t36 (MAG OR RARE)]: %NAME%{%NAME%%TAN%(Immunity % Values In %DARK_GREEN%Green %TAN%Are Breakable With Infinity)%NL%%YELLOW%Light: %GRAY%(%DARK_GREEN%100%%GRAY%)%NL%%WHITE%Highest Immunities:}%CONTINUE%
 
 //Pandemonium Citadel
-ItemDisplay[t37 (MAG OR RARE)]: %NAME%{%NAME%%TAN%(Immunity % Values In %GREEN%Green %TAN%Are Breakable With Infinity)%NL%%GOLD%Phys: %GRAY%(%WHITE%100%%GRAY%) %RED%Fire: %GRAY%(%WHITE%140%%GRAY%) %YELLOW%Light: %GRAY%(%WHITE%140%%GRAY%) %BLUE%Cold: %GRAY%(%GREEN%130%%GRAY%)  %GREEN%Poison: %GRAY%(%WHITE%135%%GRAY%)%NL%%WHITE%Highest Immunities:}%CONTINUE%
+ItemDisplay[t37 (MAG OR RARE)]: %NAME%{%NAME%%TAN%(Immunity % Values In %DARK_GREEN%Green %TAN%Are Breakable With Infinity)%NL%%GOLD%Phys: %GRAY%(%WHITE%100%%GRAY%) %RED%Fire: %GRAY%(%WHITE%140%%GRAY%) %BLUE%Cold: %GRAY%(%DARK_GREEN%130%%GRAY%)%NL%%WHITE%Highest Immunities:}%CONTINUE%
 
 //Canyon of Sescheron
-ItemDisplay[t38 (MAG OR RARE)]: %NAME%{%NAME%%TAN%(Immunity % Values In %GREEN%Green %TAN%Are Breakable With Infinity)%NL%%RED%Fire: %GRAY%(%GREEN%110%%GRAY%) %YELLOW%Light: %GRAY%(%WHITE%160%%GRAY%) %BLUE%Cold: %GRAY%(%WHITE%180%%GRAY%)  %GREEN%Poison: %GRAY%(%WHITE%110%%GRAY%)%NL%%WHITE%Highest Immunities:}%CONTINUE%
+ItemDisplay[t38 (MAG OR RARE)]: %NAME%{%NAME%%TAN%(Immunity % Values In %DARK_GREEN%Green %TAN%Are Breakable With Infinity)%NL%%YELLOW%Light: %GRAY%(%WHITE%160%%GRAY%) %GREEN%Poison: %GRAY%(%WHITE%110%%GRAY%)%NL%%WHITE%Highest Immunities:}%CONTINUE%
 
 //Kehjistan Marketplace
-ItemDisplay[t39 (MAG OR RARE)]: %NAME%{%NAME%%TAN%(Immunity % Values In %GREEN%Green %TAN%Are Breakable With Infinity)%NL%%ORANGE%Magic: %GRAY%(%WHITE%100%%GRAY%) %RED%Fire: %GRAY%(%WHITE%170%%GRAY%) %YELLOW%Light: %GRAY%(%GREEN%120%%GRAY%) %GREEN%Poison: %GRAY%(%WHITE%110%%GRAY%)%NL%%WHITE%Highest Immunities:}%CONTINUE%
+ItemDisplay[t39 (MAG OR RARE)]: %NAME%{%NAME%%TAN%(Immunity % Values In %DARK_GREEN%Green %TAN%Are Breakable With Infinity)%NL%%BLUE%Cold: %GRAY%(%DARK_GREEN%130%%GRAY%) %GREEN%Poison: %GRAY%(%WHITE%110%%GRAY%)%NL%%WHITE%Highest Immunities:}%CONTINUE%
 
+//Ashen Plains
+ItemDisplay[t3a (MAG OR RARE)]: %NAME%{%NAME%%TAN%(Immunity % Values In %DARK_GREEN%Green %TAN%Are Breakable With Infinity)%NL%%ORANGE%Magic: %GRAY%(%WHITE%120%%GRAY%) %YELLOW%Light: %GRAY%(%WHITE%145%%GRAY%) %GREEN%Poison: %GRAY%(%WHITE%130%%GRAY%)%NL%%WHITE%Highest Immunities:}%CONTINUE%
 
 // T4 Dungeons
 ItemDisplay[(t41 OR t42 OR t43) NMAG]: %DOT-62%%RED%%NAME%%CONTINUE%
