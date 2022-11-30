@@ -3097,7 +3097,7 @@ ItemDisplay[r13s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%20% Attack Speed%NL%%WHITE
 ItemDisplay[r13s]: %NAME%{%NAME%%NL%%NL%%ORANGE%Vampiric:%WHITE% This + %GRAY%PSkull %WHITE%+ %BLUE%Magic Weapon}%CONTINUE%
 ItemDisplay[r13s]: %NAME%{%NAME%%NL%%ORANGE%Bountiful:%WHITE% This + %YELLOW%PTopaz %WHITE%+ %BLUE%Magic Weapon}%CONTINUE%
 
-ItemDisplay[r14s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%25% Enhanced Dmg%NL%%WHITE%Armor: %BLUE%Replenish Life +10%NL%%WHITE%Shields: %BLUE%Replenish Life +10}%CONTINUE%
+ItemDisplay[r14s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%20% Enhanced Dmg%NL%%WHITE%Armor: %BLUE%Replenish Life +10%NL%%WHITE%Shields: %BLUE%Replenish Life +10}%CONTINUE%
 ItemDisplay[r14s]: %NAME%{%NAME%%NL%%NL%%ORANGE%Vampiric:%WHITE% This + %GRAY%PSkull %WHITE%+ %BLUE%Magic Amulet}%CONTINUE%
 ItemDisplay[r14s]: %NAME%{%NAME%%NL%%ORANGE%Bountiful:%WHITE% This + %YELLOW%PTopaz %WHITE%+ %BLUE%Magic Shield}%CONTINUE%
 
@@ -3124,7 +3124,7 @@ ItemDisplay[r23s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%Prevent Monster Heal%NL%%W
 ItemDisplay[r24s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%30% Magic Find%NL%%WHITE%Armor: %BLUE%25% Magic Find%NL%%WHITE%Shields: %BLUE%25% Magic Find}%CONTINUE%
 ItemDisplay[r25s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%20% Attack Rating%NL%%WHITE%Armor: %BLUE%+4% Max Poison Res%NL%%WHITE%Shields: %BLUE%+4% Max Poison Res}%CONTINUE%
 ItemDisplay[r26s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%7% Mana Leech%NL%%WHITE%Armor: %BLUE%+4% Max Fire Res%NL%%WHITE%Shields: %BLUE%+4% Max Fire Res}%CONTINUE%
-ItemDisplay[r27s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%50% Enhanced Damage%NL%%WHITE%Armor: %BLUE%+4% Max Cold Res%NL%%WHITE%Shields: %BLUE%+4% Max Cold Res}%CONTINUE%
+ItemDisplay[r27s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%40% Enhanced Damage%NL%%WHITE%Armor: %BLUE%+4% Max Cold Res%NL%%WHITE%Shields: %BLUE%+4% Max Cold Res}%CONTINUE%
 ItemDisplay[r28s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%20% Deadly Strike%NL%%WHITE%Armor: %BLUE%+4% Max Lightning Res%NL%%WHITE%Shields: %BLUE%+4% Max Lightning Res}%CONTINUE%
 ItemDisplay[r29s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%+4 Life Per Kill%NL%%WHITE%Armor: %BLUE%Max Mana +5%%NL%%WHITE%Shields: %BLUE%+50 Mana}%CONTINUE%
 ItemDisplay[r30s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%20% Crushing Blow%NL%%WHITE%Armor: %BLUE%4% Damage Reduction%NL%%WHITE%Shields: %BLUE%4% Damage Reduction}%CONTINUE%
@@ -3194,7 +3194,7 @@ ItemDisplay[NMAG INF]:
 ItemDisplay[(gcv OR gcy OR gcb OR gcg OR gcr OR gcw OR skc OR gfv OR gfy OR gfb OR gfg OR gfr OR gfw OR skf OR gsv OR gsy OR gsb OR gsg OR gsr OR gsw OR sku) CLVL>40 !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]:
 
 //Hide Key drops unless in Town
-ItemDisplay[key !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]:
+//ItemDisplay[key !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]:
 
 // Hide Greater Health and Mana Potions and Below
 ItemDisplay[(hp4 OR mp4 OR hp3 OR hp2 OR hp1 OR mp3 OR mp2 OR mp1) CLVL>75]:
@@ -3202,8 +3202,8 @@ ItemDisplay[(hp4 OR mp4 OR hp3 OR hp2 OR hp1 OR mp3 OR mp2 OR mp1) CLVL>75]:
 // Hide Arrows & Bolts if not Magic/Rare
 ItemDisplay[(aqv OR cqv) NMAG !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) CLVL>6]:
 
-// Hide Choking, Exploding, Fulminating, Oil, Rancid, Strangling, Thawing, Stamina, Antidotes, ID and TP Scrolls
-ItemDisplay[(gpm OR opm OR opl OR ops OR gps OR gpl OR wms OR vps OR yps OR tsc OR isc) !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) CLVL>25]:
+// Hide Choking, Exploding, Fulminating, Oil, Rancid, Strangling, Thawing, Stamina, ID and TP Scrolls
+ItemDisplay[(gpm OR opm OR opl OR ops OR gps OR gpl OR wms OR vps OR tsc OR isc) !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) CLVL>25]:
 
 // Hide Gold
 ItemDisplay[GOLD<100 CLVL<18]:
