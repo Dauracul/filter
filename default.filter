@@ -3175,6 +3175,7 @@ ItemDisplay[hp5]: %RED%!%WHITE%HP{%GRAY%Super Healing Potion}
 ItemDisplay[mp5]: %BLUE%!%WHITE%MP{%GRAY%Super Mana Potion}
 ItemDisplay[rvs]: %PURPLE%!%WHITE%Rejuv{%GRAY%Rejuvination Potion}
 ItemDisplay[rvl]: %PURPLE%!%WHITE%Full Rejuv{%GRAY%Full Rejuvination Potion}
+ItemDisplay[yps]: %DARK_GREEN%!%WHITE%Anti{%GRAY%Antidote Potion}
 
 // HIDING ITEMS
 
