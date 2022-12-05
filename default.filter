@@ -5,8 +5,8 @@ ItemDisplayFilterName[]:Low Runeword Notes
 ItemDisplayFilterName[]:Mid Runeword Notes
 ItemDisplayFilterName[]:High Runeword Notes
 
-// Release Notes on Identify Scrolls
-ItemDisplay[isc CLVL<2]: %NAME%{%NAME%%DARK_GREEN%Added Map Recipes to Anya Materials%NL%Revised Map Immunity Notes%NL%Last Updated 12-4-2022:%NL%%NL%%ORANGE%display runeword recipes on bases. Enjoy!%NL%Use the filter levels in settings to%NL%%NL%Dauracul's PD2 Loot Filter}%CONTINUE%
+// Release Notes on Identify Scrolls (in Town)
+ItemDisplay[isc (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]: %NAME%{%NAME%%DARK_GREEN%Added Map Recipes to Anya Materials%NL%Revised Map Immunity Notes%NL%Last Updated 12-4-2022:%NL%%NL%%ORANGE%display runeword recipes on bases. Enjoy!%NL%Use the filter levels in settings to%NL%%NL%Dauracul's PD2 Loot Filter}%CONTINUE%
 
 // Superior Tag on Bases
 
