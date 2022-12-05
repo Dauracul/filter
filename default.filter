@@ -540,7 +540,7 @@ ItemDisplay[fort]: %GOLD%%NAME%{%NAME%%BLUE%Monsters Drop Loot Twice (does not a
 ItemDisplay[t11 (MAG OR RARE)]: %NAME%{%NAME%%YELLOW%Lightning %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
 
 //Horazon's Memory
-ItemDisplay[t12 (MAG OR RARE)]: %NAME%{%NAME%%GRAY%Note: Lightning Spires have 1000% Poison Resist%NL%%RED%Fire %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
+ItemDisplay[t12 (MAG OR RARE)]: %NAME%{%NAME%%GRAY%Note: Lightning Spires have 1000% Poison Resist%NL%%RED%Fire %GREEN%Poison %NL%%WHITE%Immunities:}%CONTINUE%
 
 //Bastion Keep
 ItemDisplay[t13 (MAG OR RARE)]: %NAME%{%NAME%%GOLD%Physical %YELLOW%Lightning%NL%%WHITE%Immunities:}%CONTINUE%
@@ -594,7 +594,7 @@ ItemDisplay[t37 (MAG OR RARE)]: %NAME%{%NAME%%GOLD%Physical %RED%Fire %BLUE%Cold
 ItemDisplay[t38 (MAG OR RARE)]: %NAME%{%NAME%%YELLOW%Lightning %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
 
 //Kehjistan Marketplace
-ItemDisplay[t39 (MAG OR RARE)]: %NAME%{%NAME%%GRAY%Note: Fire Towers have 1000% Poison Resist%NL%%BLUE%Cold %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
+ItemDisplay[t39 (MAG OR RARE)]: %NAME%{%NAME%%GRAY%Note: Fire Towers have 1000% Poison Resist%NL%%BLUE%Cold %GREEN%Poison %NL%%WHITE%Immunities:}%CONTINUE%
 
 //Ashen Plains
 ItemDisplay[t3a (MAG OR RARE)]: %NAME%{%NAME%%ORANGE%Magic %YELLOW%Lightning %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
