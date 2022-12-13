@@ -3159,7 +3159,7 @@ ItemDisplay[r20s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%75% Extra Gold%NL%%WHITE%A
 ItemDisplay[r21s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%+75% Dmg to Demons, +100 AR to Demons%NL%%WHITE%Armor: %BLUE%30% Enhanced Defense%NL%%WHITE%Shields: %BLUE%30% Enhanced Defense}%CONTINUE%
 ItemDisplay[r22s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%25% Open Wounds%NL%%WHITE%Armor: %BLUE%+15 All Resist%NL%%WHITE%Shields: %BLUE%+22 All Resist}%CONTINUE%
 ItemDisplay[r23s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%Prevent Monster Heal%NL%%WHITE%Armor: %BLUE%Magic Dmg -7%NL%%WHITE%Shields: %BLUE%Magic Dmg -7}%CONTINUE%
-ItemDisplay[r24s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%30% Magic Find%NL%%WHITE%Armor: %BLUE%25% Magic Find%NL%%WHITE%Shields: %BLUE%25% Magic Find}%CONTINUE%
+ItemDisplay[r24s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%30% Magic Find%NL%%WHITE%Armor: %BLUE%30% Magic Find%NL%%WHITE%Shields: %BLUE%30% Magic Find}%CONTINUE%
 ItemDisplay[r25s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%20% Attack Rating%NL%%WHITE%Armor: %BLUE%+4% Max Poison Res%NL%%WHITE%Shields: %BLUE%+4% Max Poison Res}%CONTINUE%
 ItemDisplay[r26s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%7% Mana Leech%NL%%WHITE%Armor: %BLUE%+4% Max Fire Res%NL%%WHITE%Shields: %BLUE%+4% Max Fire Res}%CONTINUE%
 ItemDisplay[r27s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%40% Enhanced Damage%NL%%WHITE%Armor: %BLUE%+4% Max Cold Res%NL%%WHITE%Shields: %BLUE%+4% Max Cold Res}%CONTINUE%
