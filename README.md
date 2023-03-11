@@ -29,7 +29,7 @@ Welcome PD2 fans, this summary will be short and sweet to go over what my filter
 # Map Features
 - Simple immunity notes will be labeled on Magic or higher Maps
 - Map cube recipes are attached to the materials sold by Anya
-- All Normal and Exception bases will be hidden in maps, unless Unique/Set/Magic/Rare
+- All Normal and Exceptional bases will be hidden in maps, unless Unique/Set/Magic/Rare
 
 # Class-specific
 DRUID:
