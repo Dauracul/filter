@@ -4,9 +4,10 @@
 ItemDisplayFilterName[]:Low Runeword Notes
 ItemDisplayFilterName[]:Mid Runeword Notes
 ItemDisplayFilterName[]:High Runeword Notes
+ItemDisplayFilterName[]:Lore Flavor Text (NYI)
 
 // Release Notes on Identify Scrolls (in Town)
-ItemDisplay[isc (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]: %NAME%{%NAME%%DARK_GREEN%Added Map Recipes to Anya Materials%NL%Revised Map Immunity Notes%NL%Last Updated 12-4-2022:%NL%%NL%%ORANGE%display runeword recipes on bases. Enjoy!%NL%Use the filter levels in settings to%NL%%NL%Dauracul's PD2 Loot Filter}%CONTINUE%
+ItemDisplay[isc (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]: %NAME%{%NAME%%DARK_GREEN%Added S7 Staff Runewords%NL%Updated S7 Values and Bonuses on Socketables%NL%Added Uber Difficulty Recipes to Voidstone and Vision of Terror%NL%Last Updated 4-15-2023:%NL%%NL%%ORANGE%display runeword recipes on bases. Enjoy!%NL%Use the filter levels in settings to%NL%%NL%Dauracul's PD2 Loot Filter}%CONTINUE%
 
 // Superior Tag on Bases
 
@@ -481,6 +482,15 @@ ItemDisplay[RUNE>20]: %DOT-62%%ORANGE%%RUNENAME% Rune %GRAY%(%GREEN%%RUNENUM%%GR
 // WSS and Puzzleboxes
 ItemDisplay[(wss OR lbox OR lpp)]: %DOT-62%%NAME%%CONTINUE%
 
+// Catalyst Shard / Inert Worldstone Shard (S7)
+ItemDisplay[iwss]: %DOT-62%%NAME%%CONTINUE%
+
+// Hellfire Ashes (S7)
+ItemDisplay[cm2f]: %DOT-62%%NAME%%CONTINUE%
+
+// Dueling Mana Pot (S7)
+ItemDisplay[pvpp]: %BLUE%%NAME%%CONTINUE%
+
 // Ancient Sigils
 ItemDisplay[(ubaa OR ubab OR ubac)]: %DOT-62%%NAME%%CONTINUE%
 
@@ -489,6 +499,9 @@ ItemDisplay[(dcso OR dcbl OR dcho)]: %DOT-62%%NAME%%CONTINUE%
 
 // Rathma Items
 ItemDisplay[(rtmo OR rtmv)]: %DOT-62%%NAME%%CONTINUE%
+
+// Voidstone and Vision of Terror Difficulty Recipes
+ItemDisplay[(rtma OR dcma)]: %NAME%{%NAME%%NL%%ORANGE%Zod Rune:%BLUE% Difficulty 8%NL%%ORANGE%Cham Rune:%BLUE% Difficulty 7%NL%%ORANGE%Jah Rune:%BLUE% Difficulty 6%NL%%ORANGE%Ber Rune:%BLUE% Difficulty 5%NL%%ORANGE%Sur Rune:%BLUE% Difficulty 4%NL%%ORANGE%Lo Rune:%BLUE% Difficulty 3%NL%%ORANGE%Ohm Rune:%BLUE% Difficulty 2%NL%%ORANGE%Vex Rune:%BLUE% Difficulty 1%NL%%TAN%Cube with %ORANGE%Runes %TAN%to increase Boss Difficulty:}%CONTINUE%
 
 // Vial of Lightsong
 ItemDisplay[lsvl]: %DOT-62%%NAME%{%NAME%%TAN%(Does not work with Set or Indestructible items)}%CONTINUE%
@@ -504,6 +517,9 @@ ItemDisplay[(t11 OR t12 OR t13 OR t14 OR t15 OR t16 OR t21 OR t22 OR t23 OR t24 
 
 // Rare Maps Notice
 ItemDisplay[(t11 OR t12 OR t13 OR t14 OR t15 OR t16 OR t21 OR t22 OR t23 OR t24 OR t25 OR t26 OR t31 OR t32 OR t33 OR t34 OR t35 OR t36 OR t37 OR t38 OR t39 OR t3a) RARE]: %DOT-62%%YELLOW%%NAME%%CONTINUE%
+
+// Unique Maps Notice
+ItemDisplay[(t51 OR t52) UNI]: %DOT-62%%GOLD%%NAME%%CONTINUE%
 
 // Map Recipes
 
@@ -605,6 +621,9 @@ ItemDisplay[(t41 OR t42 OR t43) NMAG]: %DOT-62%%RED%%NAME%%CONTINUE%
 // Any Unidentified Unique Ring/Amulet
 ItemDisplay[UNI !ID (rin OR amu)]: %BORDER-0E%%GOLD%%NAME%%CONTINUE%
 
+// Any Unidentified Set Ring/Amulet
+ItemDisplay[SET !ID (rin OR amu)]: %BORDER-0E%%GREEN%%NAME%%CONTINUE%
+
 // Any Unidentified Unique (Exceptional or better)
 ItemDisplay[UNI !ID (EXC OR ELT)]: %BORDER-0E%%GOLD%%NAME%%CONTINUE%
 
@@ -616,6 +635,24 @@ ItemDisplay[UNI !ID NORM CLVL<45]: %BORDER-0E%%GOLD%%NAME%%CONTINUE%
 
 // Any Unidentified Set (Normal early-game)
 ItemDisplay[SET !ID NORM CLVL<45]: %BORDER-84%%GREEN%%NAME%%CONTINUE%
+
+// [=|| LORE FLAVORTEXT ||=]
+
+//Formatting Reference
+//ItemDisplay[xxx]: %NAME%{%NAME%%GOLD%-~+~-%NL%%ORANGE%bottom line%NL%top line%NL%%GOLD%~-+-~%NL%}%CONTINUE%
+//NOTES: (reanimate) with MULTI (MULTI155,XX>YY):
+//XX is the id of the monster (hcldx from monstats.txt) and YY is the % chance
+//NOTES: (aura on equip) with MULTI (MULTI151,XX>YY): 
+//XX is the id of the aura skill (id from skills.txt) and YY is the aura level
+
+//Azurewrath
+ItemDisplay[UNI 7cr MULTI151,119>1 FILTLVL=4]: %NAME%{%NAME%%GOLD%-~+~-%NL%%ORANGE%fall so far from righteousness?"%NL%"How can one who was once so holy%NL%%GOLD%~-+-~%NL%}%CONTINUE%
+
+//Demon Machine 
+//ItemDisplay[UNI ((8rx OR 6rx) AND MULTI155,492>0) FILTLVL=4]: //unused, only for testing reanimate with MULTI
+
+
+
 
 // Upgrade Recipes
 ItemDisplay[SET ARMOR NORM !BOOTS ID]: %NAME%{%NAME%%TAN%(Upgrade to Exceptional: %ORANGE%Tal %TAN%+ %ORANGE%Shael %TAN%+ %WHITE%PDiamond%TAN%)}%CONTINUE%
@@ -1891,7 +1928,6 @@ ItemDisplay[NMAG SOCK>1 !RW TABSK2=3]: %NAME%%GREEN%+3%TAN%jav%CONTINUE%
 ItemDisplay[NMAG SOCK=0 !RW (TABSK2=3 OR TABSK0=3)]: %WHITE%%NAME%%GRAY%)%CONTINUE%
 ItemDisplay[NMAG SOCK>1 !RW (TABSK2=3 OR TABSK0=3)]: %GRAY%%NAME%%GRAY%)%CONTINUE%
 
-
 // [=|| MISC ||=]
 
 
@@ -2405,11 +2441,20 @@ ItemDisplay[NMAG WP11 SOCK=4 !RW CLVL<65 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAM
 ItemDisplay[NMAG WP11 SOCK=4 !RW CLVL>64 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%TAN%Phoenix: %ORANGE%Vex Vex Lo Jah%NL%}%CONTINUE%
 ItemDisplay[NMAG WP11 SOCK=4 !RW CLVL<67 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%RED%Hand of Justice: Sur Cham Amn Lo (Level 67)%NL%}%CONTINUE%
 ItemDisplay[NMAG WP11 SOCK=4 !RW CLVL>66 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%TAN%Hand of Justice: %ORANGE%Sur Cham Amn Lo%NL%}%CONTINUE%
+ItemDisplay[NMAG WP11 SOCK=4 !RW CLVL<67 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%RED%Pride: Cham Sur Io Lo (Level 67)%NL%}%CONTINUE%
+ItemDisplay[NMAG WP11 SOCK=4 !RW CLVL>66 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%TAN%Pride: %ORANGE%Cham Sur Io Lo%NL%}%CONTINUE%
 
 ItemDisplay[NMAG WP11 SOCK=5 !RW CLVL<57 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%RED%Call to Arms: Amn Ral Mal Ist Ohm (Level 57)%NL%}%CONTINUE%
 ItemDisplay[NMAG WP11 SOCK=5 !RW CLVL>56 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%TAN%Call to Arms: %ORANGE%Amn Ral Mal Ist Ohm%NL%}%CONTINUE%
+ItemDisplay[NMAG WP11 SOCK=5 !RW CLVL<63 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%RED%Beast: Ber Tir Um Mal Lum (Level 63)%NL%}%CONTINUE%
+ItemDisplay[NMAG WP11 SOCK=5 !RW CLVL>62 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%TAN%Beast: %ORANGE%Ber Tir Um Mal Lum%NL%}%CONTINUE%
 ItemDisplay[NMAG WP11 SOCK=5 !RW CLVL<67 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%RED%Doom: Hel Ohm Um Lo Cham (Level 67)%NL%}%CONTINUE%
 ItemDisplay[NMAG WP11 SOCK=5 !RW CLVL>66 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%TAN%Doom: %ORANGE%Hel Ohm Um Lo Cham%NL%}%CONTINUE%
+ItemDisplay[NMAG WP11 SOCK=5 !RW CLVL<69 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%RED%Zenith: Jah Zod Ort Thul Ral (Level 69)%NL%}%CONTINUE%
+ItemDisplay[NMAG WP11 SOCK=5 !RW CLVL>68 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%TAN%Zenith: %ORANGE%Jah Zod Ort Thul Ral%NL%}%CONTINUE%
+ItemDisplay[NMAG WP11 SOCK=5 !RW CLVL<65 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%RED%Destruction: Vex Lo Ber Jah Ko (Level 65)%NL%}%CONTINUE%
+ItemDisplay[NMAG WP11 SOCK=5 !RW CLVL>64 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%TAN%Destruction: %ORANGE%Vex Lo Ber Jah Ko%NL%}%CONTINUE%
+
 
 ItemDisplay[NMAG WP11 SOCK=6 !RW CLVL<55 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%RED%Silence: Dol Eld Hel Ist Tir Vex (Level 55)%NL%}%CONTINUE%
 ItemDisplay[NMAG WP11 SOCK=6 !RW CLVL>54 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%TAN%Silence: %ORANGE%Dol Eld Hel Ist Tir Vex%NL%}%CONTINUE%
@@ -2417,6 +2462,8 @@ ItemDisplay[NMAG WP11 SOCK=6 !RW CLVL<69 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAM
 ItemDisplay[NMAG WP11 SOCK=6 !RW CLVL>68 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%TAN%Obsession: %ORANGE%Zod Ist Lem Lum Io Nef%NL%}%CONTINUE%
 ItemDisplay[NMAG WP11 SOCK=6 !RW CLVL<67 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%RED%Asylum: Gul Cham Hel Jah Dol Um (Level 67)%NL%}%CONTINUE%
 ItemDisplay[NMAG WP11 SOCK=6 !RW CLVL>66 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%TAN%Asylum: %ORANGE%Gul Cham Hel Jah Dol Um%NL%}%CONTINUE%
+ItemDisplay[NMAG WP11 SOCK=6 !RW CLVL<65 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%RED%Last Wish: Jah Mal Jah Sur Jah Ber (Level 65)%NL%}%CONTINUE%
+ItemDisplay[NMAG WP11 SOCK=6 !RW CLVL>64 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%TAN%Last Wish: %ORANGE%Jah Mal Jah Sur Jah Ber%NL%}%CONTINUE%
 
 
 // Orbs
@@ -3157,12 +3204,12 @@ ItemDisplay[r18s]: %NAME%{%NAME%%NL%%NL%%ORANGE%Bountiful:%WHITE% This + %YELLOW
 ItemDisplay[r19s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%+10 Strength%NL%%WHITE%Armor: %BLUE%+10 Strength%NL%%WHITE%Shields: %BLUE%+10 Strength}%CONTINUE%
 ItemDisplay[r20s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%75% Extra Gold%NL%%WHITE%Armor: %BLUE%50% Extra Gold%NL%%WHITE%Shields: %BLUE%50% Extra Gold}%CONTINUE%
 ItemDisplay[r21s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%+75% Dmg to Demons, +100 AR to Demons%NL%%WHITE%Armor: %BLUE%30% Enhanced Defense%NL%%WHITE%Shields: %BLUE%30% Enhanced Defense}%CONTINUE%
-ItemDisplay[r22s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%25% Open Wounds%NL%%WHITE%Armor: %BLUE%+15 All Resist%NL%%WHITE%Shields: %BLUE%+22 All Resist}%CONTINUE%
+ItemDisplay[r22s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%20% Open Wounds, +40 Open Wounds Dmg%NL%%WHITE%Armor: %BLUE%+15 All Resist%NL%%WHITE%Shields: %BLUE%+22 All Resist}%CONTINUE%
 ItemDisplay[r23s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%Prevent Monster Heal%NL%%WHITE%Armor: %BLUE%Magic Dmg -7%NL%%WHITE%Shields: %BLUE%Magic Dmg -7}%CONTINUE%
 ItemDisplay[r24s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%30% Magic Find%NL%%WHITE%Armor: %BLUE%30% Magic Find%NL%%WHITE%Shields: %BLUE%30% Magic Find}%CONTINUE%
 ItemDisplay[r25s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%20% Attack Rating%NL%%WHITE%Armor: %BLUE%+4% Max Poison Res%NL%%WHITE%Shields: %BLUE%+4% Max Poison Res}%CONTINUE%
 ItemDisplay[r26s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%7% Mana Leech%NL%%WHITE%Armor: %BLUE%+4% Max Fire Res%NL%%WHITE%Shields: %BLUE%+4% Max Fire Res}%CONTINUE%
-ItemDisplay[r27s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%40% Enhanced Damage%NL%%WHITE%Armor: %BLUE%+4% Max Cold Res%NL%%WHITE%Shields: %BLUE%+4% Max Cold Res}%CONTINUE%
+ItemDisplay[r27s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%45% Enhanced Damage%NL%%WHITE%Armor: %BLUE%+4% Max Cold Res%NL%%WHITE%Shields: %BLUE%+4% Max Cold Res}%CONTINUE%
 ItemDisplay[r28s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%20% Deadly Strike%NL%%WHITE%Armor: %BLUE%+4% Max Lightning Res%NL%%WHITE%Shields: %BLUE%+4% Max Lightning Res}%CONTINUE%
 ItemDisplay[r29s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%+4 Life Per Kill%NL%%WHITE%Armor: %BLUE%Max Mana +5%%NL%%WHITE%Shields: %BLUE%+50 Mana}%CONTINUE%
 ItemDisplay[r30s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%20% Crushing Blow%NL%%WHITE%Armor: %BLUE%4% Damage Reduction%NL%%WHITE%Shields: %BLUE%4% Damage Reduction}%CONTINUE%
