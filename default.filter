@@ -646,7 +646,7 @@ ItemDisplay[SET !ID NORM CLVL<45]: %BORDER-84%%GREEN%%NAME%%CONTINUE%
 //XX is the id of the aura skill (id from skills.txt) and YY is the aura level
 
 //Azurewrath
-ItemDisplay[UNI 7cr MULTI151,119>1 FILTLVL=4]: %NAME%{%NAME%%GOLD%-~+~-%NL%%ORANGE%fall so far from righteousness?"%NL%"How can one who was once so holy%NL%%GOLD%~-+-~%NL%}%CONTINUE%
+//ItemDisplay[UNI 7cr MULTI151,119>1 FILTLVL=4]: %NAME%{%NAME%%GOLD%-~+~-%NL%%ORANGE%fall so far from righteousness?"%NL%"How can one who was once so holy%NL%%GOLD%~-+-~%NL%}%CONTINUE%
 
 //Demon Machine 
 //ItemDisplay[UNI ((8rx OR 6rx) AND MULTI155,492>0) FILTLVL=4]: //unused, only for testing reanimate with MULTI
