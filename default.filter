@@ -507,7 +507,7 @@ ItemDisplay[(rtma OR dcma)]: %NAME%{%NAME%%NL%%ORANGE%Zod Rune:%BLUE% Difficulty
 ItemDisplay[lsvl]: %DOT-62%%NAME%{%NAME%%TAN%(Does not work with Set or Indestructible items)}%CONTINUE%
 
 // Lillith's Mirror
-ItemDisplay[llmr]: %DOT-62%%NAME%{%NAME%%WHITE%Only works with %BLUE%Magic%WHITE%/%YELLOW%Rare %WHITE%Equipment and Jewels%NL%%TAN%(Resulting items cannot be Transmuted)}%CONTINUE%
+ItemDisplay[llmr]: %DOT-62%%NAME%{%NAME%%TAN%(Resulting items cannot be Transmuted%NL%%WHITE%Only works with %BLUE%Magic%WHITE%/%YELLOW%Rare %WHITE%Equipment and Jewels)}%CONTINUE%
 
 // White Maps Notice
 ItemDisplay[(t11 OR t12 OR t13 OR t14 OR t15 OR t16 OR t21 OR t22 OR t23 OR t24 OR t25 OR t26 OR t31 OR t32 OR t33 OR t34 OR t35 OR t36 OR t37 OR t38 OR t39 OR t3a) NMAG]: %DOT-62%%ORANGE%%NAME%%CONTINUE%
