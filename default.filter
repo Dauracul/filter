@@ -501,7 +501,7 @@ ItemDisplay[(dcso OR dcbl OR dcho)]: %DOT-62%%NAME%%CONTINUE%
 ItemDisplay[(rtmo OR rtmv)]: %DOT-62%%NAME%%CONTINUE%
 
 // Voidstone and Vision of Terror Difficulty Recipes
-ItemDisplay[(rtma OR dcma)]: %NAME%{%NAME%%NL%%ORANGE%Zod Rune:%BLUE% Difficulty 8%NL%%ORANGE%Cham Rune:%BLUE% Difficulty 7%NL%%ORANGE%Jah Rune:%BLUE% Difficulty 6%NL%%ORANGE%Ber Rune:%BLUE% Difficulty 5%NL%%ORANGE%Sur Rune:%BLUE% Difficulty 4%NL%%ORANGE%Lo Rune:%BLUE% Difficulty 3%NL%%ORANGE%Ohm Rune:%BLUE% Difficulty 2%NL%%ORANGE%Vex Rune:%BLUE% Difficulty 1%NL%%TAN%Cube with %ORANGE%Runes %TAN%to increase Boss Difficulty:}%CONTINUE%
+ItemDisplay[(rtma OR dcma)]: %NAME%{%NAME%%ORANGE%Zod Rune:%BLUE% Difficulty 8%NL%%ORANGE%Cham Rune:%BLUE% Difficulty 7%NL%%ORANGE%Jah Rune:%BLUE% Difficulty 6%NL%%ORANGE%Ber Rune:%BLUE% Difficulty 5%NL%%ORANGE%Sur Rune:%BLUE% Difficulty 4%NL%%ORANGE%Lo Rune:%BLUE% Difficulty 3%NL%%ORANGE%Ohm Rune:%BLUE% Difficulty 2%NL%%ORANGE%Vex Rune:%BLUE% Difficulty 1%NL%%TAN%Cube with %ORANGE%Runes %TAN%to increase Boss Difficulty:}%CONTINUE%
 
 // Vial of Lightsong
 ItemDisplay[lsvl]: %DOT-62%%NAME%{%NAME%%TAN%(Does not work with Set or Indestructible items)}%CONTINUE%
