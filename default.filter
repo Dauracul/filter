@@ -7,7 +7,7 @@ ItemDisplayFilterName[]:High Runeword Notes
 ItemDisplayFilterName[]:Lore Flavor Text (NYI)
 
 // Release Notes on Identify Scrolls (in Town)
-ItemDisplay[isc (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]: %NAME%{%NAME%%DARK_GREEN%Added S7 Staff Runewords%NL%Updated S7 Values and Bonuses on Socketables%NL%Added Uber Difficulty Recipes to Voidstone and Vision of Terror%NL%Last Updated 4-15-2023:%NL%%NL%%ORANGE%display runeword recipes on bases. Enjoy!%NL%Use the filter levels in settings to%NL%%NL%Dauracul's PD2 Loot Filter}%CONTINUE%
+ItemDisplay[isc (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]: %NAME%{%NAME%%DARK_GREEN%Added new Map items and Recipes%NL%Added S7 Staff Runewords%NL%Updated S7 Values and Bonuses on Socketables%NL%Added Uber Difficulty Recipes to Voidstone and Vision of Terror%NL%Last Updated 4-22-2023:%NL%%NL%%ORANGE%display runeword recipes on bases. Enjoy!%NL%Use the filter levels in settings to%NL%%NL%Dauracul's PD2 Loot Filter}%CONTINUE%
 
 // Superior Tag on Bases
 
@@ -486,22 +486,33 @@ ItemDisplay[(wss OR lbox OR lpp)]: %DOT-62%%NAME%%CONTINUE%
 ItemDisplay[iwss]: %DOT-62%%NAME%%CONTINUE%
 
 // Hellfire Ashes (S7)
-ItemDisplay[cm2f]: %DOT-62%%NAME%%CONTINUE%
+ItemDisplay[cm2f]: %GOLD%%NAME%%CONTINUE%
+ItemDisplay[ID UNI cm2]: %GOLD%%NAME%{%NAME%%WHITE%Transmute with a Key to create %GOLD%Hellfire Ashes}%CONTINUE%
 
 // Dueling Mana Pot (S7)
 ItemDisplay[pvpp]: %BLUE%%NAME%%CONTINUE%
 
 // Ancient Sigils
-ItemDisplay[(ubaa OR ubab OR ubac)]: %DOT-62%%NAME%%CONTINUE%
+ItemDisplay[(ubaa OR ubab OR ubac)]: %DOT-62%%ORANGE%%NAME%%CONTINUE%
+ItemDisplay[uba]: %GOLD%%NAME%%CONTINUE%
 
 // DClone Items
-ItemDisplay[(dcso OR dcbl OR dcho)]: %DOT-62%%NAME%%CONTINUE%
+ItemDisplay[(dcso OR dcbl OR dcho)]: %DOT-62%%ORANGE%%NAME%%CONTINUE%
 
 // Rathma Items
-ItemDisplay[(rtmo OR rtmv)]: %DOT-62%%NAME%%CONTINUE%
+ItemDisplay[(rtmo OR rtmv)]: %DOT-62%%ORANGE%%NAME%%CONTINUE%
+
+// DClone Recipe
+ItemDisplay[(dcso OR dcbl OR dcho)]: %NAME%{%NAME%%WHITE%to create %GOLD%Vision of Terror%NL%%WHITE%Transmute %ORANGE%Prime Evil Soul %WHITE%+ %ORANGE%Black Soulstone %WHITE%+ %ORANGE%Pure Demonic Essence}%CONTINUE%
+
+// Rathma Recipe
+ItemDisplay[(rtmo OR rtmv OR cm2f)]: %NAME%{%NAME%%WHITE%to create %GOLD%Voidstone%NL%%WHITE%Transmute %ORANGE%Trang-Oul's Jawbone %WHITE%+ %ORANGE%Splinter of the Void %WHITE%+ %GOLD%Hellfire Ashes}%CONTINUE%
+
+// Ancients Recipe
+ItemDisplay[(ubaa OR ubab OR ubac)]: %NAME%{%NAME%%WHITE%to create %GOLD%Relic of the Ancients%NL%%WHITE%Transmute sigils %ORANGE%Madawc %WHITE%+ %ORANGE%Talic %WHITE%+ %ORANGE%Korlic}%CONTINUE%
 
 // Voidstone and Vision of Terror Difficulty Recipes
-ItemDisplay[(rtma OR dcma)]: %NAME%{%NAME%%ORANGE%Zod Rune:%BLUE% Difficulty 8%NL%%ORANGE%Cham Rune:%BLUE% Difficulty 7%NL%%ORANGE%Jah Rune:%BLUE% Difficulty 6%NL%%ORANGE%Ber Rune:%BLUE% Difficulty 5%NL%%ORANGE%Sur Rune:%BLUE% Difficulty 4%NL%%ORANGE%Lo Rune:%BLUE% Difficulty 3%NL%%ORANGE%Ohm Rune:%BLUE% Difficulty 2%NL%%ORANGE%Vex Rune:%BLUE% Difficulty 1%NL%%TAN%Cube with %ORANGE%Runes %TAN%to increase Boss Difficulty:}%CONTINUE%
+ItemDisplay[(rtma OR dcma)]: %GOLD%%NAME%{%NAME%%NL%%ORANGE%Zod Rune:%BLUE% Difficulty 8%NL%%ORANGE%Cham Rune:%BLUE% Difficulty 7%NL%%ORANGE%Jah Rune:%BLUE% Difficulty 6%NL%%ORANGE%Ber Rune:%BLUE% Difficulty 5%NL%%ORANGE%Sur Rune:%BLUE% Difficulty 4%NL%%ORANGE%Lo Rune:%BLUE% Difficulty 3%NL%%ORANGE%Ohm Rune:%BLUE% Difficulty 2%NL%%ORANGE%Vex Rune:%BLUE% Difficulty 1%NL%%TAN%Cube with %ORANGE%Runes %TAN%to increase Boss Difficulty:}%CONTINUE%
 
 // Vial of Lightsong
 ItemDisplay[lsvl]: %DOT-62%%NAME%{%NAME%%TAN%(Does not work with Set or Indestructible items)}%CONTINUE%
@@ -549,6 +560,12 @@ ItemDisplay[std]: %NAME%{%NAME%%BLUE%+10% Experience, +20% Monster Density, +20%
 
 // Orb of Fortification
 ItemDisplay[fort]: %GOLD%%NAME%{%NAME%%BLUE%Monsters Drop Loot Twice (does not affect Bosses or Events)%NL%-50% Base Density, +100% Monster Life, +20% Monster Damage, +100% Experience%NL%%WHITE%Combine with a %ORANGE%Map %WHITE%to add %ORANGE%Fortified}%CONTINUE%
+
+// Catalyst Shard
+ItemDisplay[iwss]: %NAME%{%NAME%%BLUE%Map Contains a Random Event%NL%%WHITE%Combine with a %ORANGE%Map %WHITE%to add %ORANGE%Catalyzed}%CONTINUE%
+
+// Map has Random Event applied (Catalyst Shard)
+ItemDisplay[STAT500>0]: %NAME%{%NAME%%ORANGE%Catalyzed%NL%}%CONTINUE%
 
 // Immunes on Maps
 
@@ -646,7 +663,7 @@ ItemDisplay[SET !ID NORM CLVL<45]: %BORDER-84%%GREEN%%NAME%%CONTINUE%
 //XX is the id of the aura skill (id from skills.txt) and YY is the aura level
 
 //Azurewrath
-//ItemDisplay[UNI 7cr MULTI151,119>1 FILTLVL=4]: %NAME%{%NAME%%GOLD%-~+~-%NL%%ORANGE%fall so far from righteousness?"%NL%"How can one who was once so holy%NL%%GOLD%~-+-~%NL%}%CONTINUE%
+//ItemDisplay[UNI 7cr MULTI151,119>1 FILTLVL=4]: %NAME%{%NAME%%GOLD%-~+~-%NL%%ORANGE%fall so far from //righteousness?"%NL%"How can one who was once so holy%NL%%GOLD%~-+-~%NL%}%CONTINUE%
 
 //Demon Machine 
 //ItemDisplay[UNI ((8rx OR 6rx) AND MULTI155,492>0) FILTLVL=4]: //unused, only for testing reanimate with MULTI
@@ -1362,8 +1379,8 @@ ItemDisplay[CL3 NMAG RES=30 !RW]: %DOT-16%%NAME% %GRAY%(%PURPLE%+30%GRAY%)%CONTI
 // [=|| BARBARIAN ||=]
 
 // Open brackets on Barb Helms with Staffmods
-ItemDisplay[NMAG SOCK=0 !RW (SK126=3 OR SK128=3 OR SK130=3 OR SK131=3 OR SK132=3 OR SK133=3 OR SK134=3 OR SK135=3 OR SK137=3 OR SK138=3 OR SK139=3 OR SK140=3 OR SK141=3 OR SK142=3 OR SK143=3 OR SK144=3 OR SK145=3 OR SK146=3 OR SK147=3 OR SK148=3 OR SK149=3 OR SK150=3 OR SK151=3 OR SK152=3 OR SK153=3 OR SK154=3 OR SK155=3)]: %WHITE%%NAME% %GRAY%(%CONTINUE%
-ItemDisplay[NMAG SOCK>1 !RW (SK126=3 OR SK128=3 OR SK130=3 OR SK131=3 OR SK132=3 OR SK133=3 OR SK134=3 OR SK135=3 OR SK137=3 OR SK138=3 OR SK139=3 OR SK140=3 OR SK141=3 OR SK142=3 OR SK143=3 OR SK144=3 OR SK145=3 OR SK146=3 OR SK147=3 OR SK148=3 OR SK149=3 OR SK150=3 OR SK151=3 OR SK152=3 OR SK153=3 OR SK154=3 OR SK155=3)]: %GRAY%%NAME% %GRAY%(%CONTINUE%
+ItemDisplay[NMAG SOCK=0 !RW (SK126=3 OR SK128=3 OR SK130=3 OR SK131=3 OR SK132=3 OR SK133=3 OR SK134=3 OR SK135=3 OR SK137=3 OR SK138=3 OR SK139=3 OR SK140=3 OR SK141=3 OR SK142=3 OR SK143=3 OR SK144=3 OR SK145=3 OR SK146=3 OR SK147=3 OR SK148=3 OR SK149=3 OR SK150=3 OR SK151=3 OR SK152=3 OR SK153=3 OR SK154=3 OR SK155=3 OR SK368=3)]: %WHITE%%NAME% %GRAY%(%CONTINUE%
+ItemDisplay[NMAG SOCK>1 !RW (SK126=3 OR SK128=3 OR SK130=3 OR SK131=3 OR SK132=3 OR SK133=3 OR SK134=3 OR SK135=3 OR SK137=3 OR SK138=3 OR SK139=3 OR SK140=3 OR SK141=3 OR SK142=3 OR SK143=3 OR SK144=3 OR SK145=3 OR SK146=3 OR SK147=3 OR SK148=3 OR SK149=3 OR SK150=3 OR SK151=3 OR SK152=3 OR SK153=3 OR SK154=3 OR SK155=3 OR SK368=3)]: %GRAY%%NAME% %GRAY%(%CONTINUE%
 
 // Barb Helms with +3 skills to Bash
 ItemDisplay[NMAG SOCK=0 !RW SK126=3]: %NAME%%GREEN%+3%TAN%bash%CONTINUE%
@@ -1390,8 +1407,8 @@ ItemDisplay[NMAG SOCK=0 !RW SK133=3]: %NAME%%GREEN%+3%TAN%dswg%CONTINUE%
 ItemDisplay[NMAG SOCK>1 !RW SK133=3]: %NAME%%GREEN%+3%TAN%dswg%CONTINUE%
 
 // Barb Helms with +3 skills to Polearm and Spear Mastery
-ItemDisplay[NMAG SOCK=0 !RW SK134=3]: %NAME%%GREEN%+3%TAN%p&s%CONTINUE%
-ItemDisplay[NMAG SOCK>1 !RW SK134=3]: %NAME%%GREEN%+3%TAN%p&s%CONTINUE%
+ItemDisplay[NMAG SOCK=0 !RW SK134=3]: %NAME%%GREEN%+3%TAN%pa&s%CONTINUE%
+ItemDisplay[NMAG SOCK>1 !RW SK134=3]: %NAME%%GREEN%+3%TAN%pa&s%CONTINUE%
 
 // Barb Helms with +3 skills to Throwing Mastery
 ItemDisplay[NMAG SOCK=0 !RW SK135=3]: %NAME%%GREEN%+3%TAN%thrw%CONTINUE%
@@ -1473,9 +1490,13 @@ ItemDisplay[NMAG SOCK>1 !RW SK154=3]: %NAME%%GREEN%+3%TAN%wcry%CONTINUE%
 ItemDisplay[NMAG SOCK=0 !RW SK155=3]: %NAME%%GREEN%+3%TAN%bcom%CONTINUE%
 ItemDisplay[NMAG SOCK>1 !RW SK155=3]: %NAME%%GREEN%+3%TAN%bcom%CONTINUE%
 
+// Barb Helms with +3 skills to Deep Wounds
+ItemDisplay[NMAG SOCK=0 !RW SK368=3]: %NAME%%GREEN%+3%TAN%deep%CONTINUE%
+ItemDisplay[NMAG SOCK>1 !RW SK368=3]: %NAME%%GREEN%+3%TAN%deep%CONTINUE%
+
 // Closing brackets on Barb Helms with Staffmods
-ItemDisplay[NMAG SOCK=0 !RW (SK126=3 OR SK128=3 OR SK130=3 OR SK131=3 OR SK132=3 OR SK133=3 OR SK134=3 OR SK135=3 OR SK137=3 OR SK138=3 OR SK139=3 OR SK140=3 OR SK141=3 OR SK142=3 OR SK143=3 OR SK144=3 OR SK145=3 OR SK146=3 OR SK147=3 OR SK148=3 OR SK149=3 OR SK150=3 OR SK151=3 OR SK152=3 OR SK153=3 OR SK154=3 OR SK155=3)]: %WHITE%%NAME%%GRAY%)%CONTINUE%
-ItemDisplay[NMAG SOCK>1 !RW (SK126=3 OR SK128=3 OR SK130=3 OR SK131=3 OR SK132=3 OR SK133=3 OR SK134=3 OR SK135=3 OR SK137=3 OR SK138=3 OR SK139=3 OR SK140=3 OR SK141=3 OR SK142=3 OR SK143=3 OR SK144=3 OR SK145=3 OR SK146=3 OR SK147=3 OR SK148=3 OR SK149=3 OR SK150=3 OR SK151=3 OR SK152=3 OR SK153=3 OR SK154=3 OR SK155=3)]: %GRAY%%NAME%%GRAY%)%CONTINUE%
+ItemDisplay[NMAG SOCK=0 !RW (SK126=3 OR SK128=3 OR SK130=3 OR SK131=3 OR SK132=3 OR SK133=3 OR SK134=3 OR SK135=3 OR SK137=3 OR SK138=3 OR SK139=3 OR SK140=3 OR SK141=3 OR SK142=3 OR SK143=3 OR SK144=3 OR SK145=3 OR SK146=3 OR SK147=3 OR SK148=3 OR SK149=3 OR SK150=3 OR SK151=3 OR SK152=3 OR SK153=3 OR SK154=3 OR SK155=3 OR SK368=3)]: %WHITE%%NAME%%GRAY%)%CONTINUE%
+ItemDisplay[NMAG SOCK>1 !RW (SK126=3 OR SK128=3 OR SK130=3 OR SK131=3 OR SK132=3 OR SK133=3 OR SK134=3 OR SK135=3 OR SK137=3 OR SK138=3 OR SK139=3 OR SK140=3 OR SK141=3 OR SK142=3 OR SK143=3 OR SK144=3 OR SK145=3 OR SK146=3 OR SK147=3 OR SK148=3 OR SK149=3 OR SK150=3 OR SK151=3 OR SK152=3 OR SK153=3 OR SK154=3 OR SK155=3 OR SK368=3)]: %GRAY%%NAME%%GRAY%)%CONTINUE%
 
 // [=|| SORCERESS ||=]
 
@@ -2559,7 +2580,9 @@ ItemDisplay[NMAG WP4 SOCK=3 !RW CLVL>66 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME
 
 // RUNEWORD TIER NOTES
 
-ItemDisplay[NMAG !RW SOCK>1 FILTLVL>3]: %NAME%{%NAME%%RED%Invalid Filter Level%NL%}%CONTINUE%
+ItemDisplay[NMAG !RW SOCK>1 FILTLVL>3]: %NAME%{%NAME%%RED%Invalid Filter Level%NL%}%CONTINUE%    //Keep active until Lore flavor text is added
+//ItemDisplay[NMAG !RW SOCK>1 FILTLVL>3]: %NAME%{%NAME%%RED%Stay a while and listen...%NL%%WHITE%Filter Level: 4 (Flavor Text)%NL%}%CONTINUE%   //Use this when flavor text is added
+// Make sure to still use Invalid Filter Level for non-uniques and sets, flavor text will not be on normal bases
 
 ItemDisplay[NMAG WP4 !RW SOCK=2 (FILTLVL>0 AND FILTLVL<2)]: %NAME%{%NAME%%WHITE%Runewords:%NL%%WHITE%Filter Level: 1 (Low Runewords)%NL%}%CONTINUE%
 ItemDisplay[NMAG WP4 !RW SOCK=2 (FILTLVL>1 AND FILTLVL<3)]: %NAME%{%NAME%%RED%None (Incorrect Sockets, Change Filter Level)%NL%%WHITE%Runewords:%NL%%WHITE%Filter Level: 2 (Mid Runewords)%NL%}%CONTINUE%
@@ -3204,7 +3227,7 @@ ItemDisplay[r18s]: %NAME%{%NAME%%NL%%NL%%ORANGE%Bountiful:%WHITE% This + %YELLOW
 ItemDisplay[r19s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%+10 Strength%NL%%WHITE%Armor: %BLUE%+10 Strength%NL%%WHITE%Shields: %BLUE%+10 Strength}%CONTINUE%
 ItemDisplay[r20s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%75% Extra Gold%NL%%WHITE%Armor: %BLUE%50% Extra Gold%NL%%WHITE%Shields: %BLUE%50% Extra Gold}%CONTINUE%
 ItemDisplay[r21s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%+75% Dmg to Demons, +100 AR to Demons%NL%%WHITE%Armor: %BLUE%30% Enhanced Defense%NL%%WHITE%Shields: %BLUE%30% Enhanced Defense}%CONTINUE%
-ItemDisplay[r22s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%20% Open Wounds, +40 Open Wounds Dmg%NL%%WHITE%Armor: %BLUE%+15 All Resist%NL%%WHITE%Shields: %BLUE%+22 All Resist}%CONTINUE%
+ItemDisplay[r22s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%10% Open Wounds, +120 Open Wounds Dmg%NL%%WHITE%Armor: %BLUE%+15 All Resist%NL%%WHITE%Shields: %BLUE%+22 All Resist}%CONTINUE%
 ItemDisplay[r23s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%Prevent Monster Heal%NL%%WHITE%Armor: %BLUE%Magic Dmg -7%NL%%WHITE%Shields: %BLUE%Magic Dmg -7}%CONTINUE%
 ItemDisplay[r24s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%30% Magic Find%NL%%WHITE%Armor: %BLUE%30% Magic Find%NL%%WHITE%Shields: %BLUE%30% Magic Find}%CONTINUE%
 ItemDisplay[r25s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%20% Attack Rating%NL%%WHITE%Armor: %BLUE%+4% Max Poison Res%NL%%WHITE%Shields: %BLUE%+4% Max Poison Res}%CONTINUE%
