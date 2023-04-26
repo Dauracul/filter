@@ -6,6 +6,10 @@ ItemDisplayFilterName[]:Mid Runeword Notes
 ItemDisplayFilterName[]:High Runeword Notes
 ItemDisplayFilterName[]:Lore Flavor Text (NYI)
 
+// Scrolls in Teal Color (Gray for DDraw)
+ItemDisplay[isc]: %TEAL%%NAME%%CONTINUE%
+ItemDisplay[tsc]: %TEAL%%NAME%%CONTINUE%
+
 // Release Notes on Identify Scrolls (in Town)
 ItemDisplay[isc (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]: %NAME%{%NAME%%DARK_GREEN%Added new Map items and Recipes%NL%Added S7 Staff Runewords%NL%Updated S7 Values and Bonuses on Socketables%NL%Added Uber Difficulty Recipes to Voidstone and Vision of Terror%NL%Last Updated 4-22-2023:%NL%%NL%%ORANGE%display runeword recipes on bases. Enjoy!%NL%Use the filter levels in settings to%NL%%NL%Dauracul's PD2 Loot Filter}%CONTINUE%
 
