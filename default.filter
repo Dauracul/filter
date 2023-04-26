@@ -3269,14 +3269,14 @@ ItemDisplay[GEMTYPE=7 GEM=4]: %WHITE%%NAME%{%NAME%%WHITE%Weapons: %BLUE%Leech 3%
 ItemDisplay[GEMTYPE=7 GEM=5]: %WHITE%%NAME%{%NAME%%WHITE%Weapons: %BLUE%Leech 4% Life / 3% Mana%NL%%WHITE%Armor: %BLUE%Regen +5 / 19%%NL%%WHITE%Shields: %BLUE%20 Thorns Dmg} %GRAY%(%GRAY%%QTY%%GRAY%)
 
 // Jewels
-ItemDisplay[jew UNI]: %DOT-61%%GOLD%%NAME%%CONTINUE%
-ItemDisplay[jew MAG]: %DOT-97%%BLUE%%NAME%%CONTINUE%
-ItemDisplay[jew RARE]: %DOT-A8%%YELLOW%%NAME%%CONTINUE%
+ItemDisplay[jew UNI !ID]: %DOT-61%%GOLD%%NAME%%CONTINUE%
+ItemDisplay[jew MAG !ID]: %DOT-97%%BLUE%%NAME%%CONTINUE%
+ItemDisplay[jew RARE !ID]: %DOT-A8%%YELLOW%%NAME%%CONTINUE%
 
 // Charms
-ItemDisplay[cm1 MAG]: %DOT-97%%BLUE%%NAME%%CONTINUE%
-ItemDisplay[cm2 MAG]: %DOT-97%%BLUE%%NAME%%CONTINUE%
-ItemDisplay[cm3 MAG]: %DOT-97%%BLUE%%NAME%%CONTINUE%
+ItemDisplay[cm1 MAG !ID]: %DOT-97%%BLUE%%NAME%%CONTINUE%
+ItemDisplay[cm2 MAG !ID]: %DOT-97%%BLUE%%NAME%%CONTINUE%
+ItemDisplay[cm3 MAG !ID]: %DOT-97%%BLUE%%NAME%%CONTINUE%
 
 // Potions
 ItemDisplay[hp5]: %RED%!%WHITE%HP{%GRAY%Super Healing Potion}
