@@ -4507,7 +4507,7 @@ ItemDisplay[r26s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%7% Mana Leech%NL%%WHITE%Ar
 ItemDisplay[r27s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%45% Enhanced Damage%NL%%WHITE%Armor: %BLUE%+4% Max Cold Res%NL%%WHITE%Shields: %BLUE%+4% Max Cold Res}%CONTINUE%
 ItemDisplay[r28s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%20% Deadly Strike%NL%%WHITE%Armor: %BLUE%+4% Max Lightning Res%NL%%WHITE%Shields: %BLUE%+4% Max Lightning Res}%CONTINUE%
 ItemDisplay[r29s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%+4 Life Per Kill%NL%%WHITE%Armor: %BLUE%Max Mana +5%%NL%%WHITE%Shields: %BLUE%+50 Mana}%CONTINUE%
-ItemDisplay[r30s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%20% Crushing Blow%NL%%WHITE%Armor: %BLUE%4% Damage Reduction%NL%%WHITE%Shields: %BLUE%4% Damage Reduction}%CONTINUE%
+ItemDisplay[r30s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%20% Crushing Blow%NL%%WHITE%Armor: %BLUE%5% Damage Reduction%NL%%WHITE%Shields: %BLUE%5% Damage Reduction}%CONTINUE%
 ItemDisplay[r31s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%Ignore Target Def%NL%%WHITE%Armor: %BLUE%Max Life +5%%NL%%WHITE%Shields: %BLUE%+50 Life}%CONTINUE%
 ItemDisplay[r32s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%Freeze Target +3%NL%%WHITE%Armor: %BLUE%Cannot be Frozen%NL%%WHITE%Shields: %BLUE%Cannot be Frozen}%CONTINUE%
 ItemDisplay[r33s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%Indestructible%NL%%WHITE%Armor: %BLUE%Indestructible%NL%%WHITE%Shields: %BLUE%Indestructible}%CONTINUE%
