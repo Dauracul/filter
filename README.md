@@ -17,7 +17,7 @@ This is intended to be a very non-invasive loot filter. No bright neon flashy co
 - All Gems below Flawless quality will be hidden after level 40, unless standing in Town
 - All Health and Mana Potions below Super will be hidden above level 75
 - Arrows/Bolts are hidden past level 6, unless Magic or Rare
-- All Choking, Exploding, Fulminating, Oil, Rancid, Strangling, Thawing, Stamina potions, and Scroll of Identify and Scroll of Town Portal are hidden above level 25 unless in Town
+- All Thawing, Stamina potions, and Scroll of Identify and Scroll of Town Portal are hidden above level 25 unless in Town
 - Gold stacks will be hidden as you level (<100 starting, <1000 at level 18, <5000 at level 80)
 - New S8 Throwing Potions will be hidden at level 25 (small), level 50 (medium), and level 75 (large) unless in Town
 
