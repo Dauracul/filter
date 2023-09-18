@@ -11,8 +11,7 @@ ItemDisplay[isc]: %TEAL%%NAME%%CONTINUE%
 ItemDisplay[tsc]: %TEAL%%NAME%%CONTINUE%
 
 // Release Notes on Identify Scrolls (in Town at Vendors)
-ItemDisplay[isc SHOP (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]:
-%NAME%{%NAME%%BLUE%wiki.projectdiablo2.com%NL%%NL%%DARK_GREEN%For full Season 8 patch notes, visit the Project Diablo 2 Wiki:%NL%Updated %RED%Season 8: Depravity %DARK_GREEN%items, changes, and values.%NL%Last Updated 9-16-2023:%NL%%NL%%ORANGE%filter level keys in settings for easy access!%NL%I highly recommend binding the Increase and Decrease%NL%runeword recipes on weapon and armor bases.%NL%Use the filter levels in settings to display%NL%%NL%%GOLD%Dauracul's PD2 Loot Filter}%CONTINUE%
+ItemDisplay[isc SHOP]: %NAME%{%NAME%%BLUE%wiki.projectdiablo2.com%NL%%NL%%DARK_GREEN%For full Season 8 patch notes, visit the Project Diablo 2 Wiki:%NL%Updated %RED%Season 8: Depravity %DARK_GREEN%items, changes, and values.%NL%Last Updated 9-16-2023:%NL%%NL%%ORANGE%filter level keys in settings for easy access!%NL%I highly recommend binding the Increase and Decrease%NL%runeword recipes on weapon and armor bases.%NL%Use the filter levels in settings to display%NL%%NL%%GOLD%Dauracul's PD2 Loot Filter}
 
 // Superior Tag on Bases
 
