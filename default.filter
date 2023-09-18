@@ -11,7 +11,8 @@ ItemDisplay[isc]: %TEAL%%NAME%%CONTINUE%
 ItemDisplay[tsc]: %TEAL%%NAME%%CONTINUE%
 
 // Release Notes on Identify Scrolls (in Town at Vendors)
-ItemDisplay[isc SHOP (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]: %NAME%{%NAME%%DARK_GREEN%Added new Map items and Recipes%NL%Added S7 Staff Runewords%NL%Updated S7 Values and Bonuses on Socketables%NL%Added Uber Difficulty Recipes to Voidstone and Vision of Terror%NL%Last Updated 4-28-2023:%NL%%NL%%ORANGE%display runeword recipes on bases. Enjoy!%NL%Use the filter levels in settings to%NL%%NL%Dauracul's PD2 Loot Filter}%CONTINUE%
+ItemDisplay[isc SHOP (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]:
+%NAME%{%NAME%%BLUE%wiki.projectdiablo2.com%NL%%NL%%DARK_GREEN%For full Season 8 patch notes, visit the Project Diablo 2 Wiki:%NL%Updated %RED%Season 8: Depravity %DARK_GREEN%items, changes, and values.%NL%Last Updated 9-16-2023:%NL%%NL%%ORANGE%filter level keys in settings for easy access!%NL%I highly recommend binding the Increase and Decrease%NL%runeword recipes on weapon and armor bases.%NL%Use the filter levels in settings to display%NL%%NL%%GOLD%Dauracul's PD2 Loot Filter}%CONTINUE%
 
 // Superior Tag on Bases
 
@@ -483,6 +484,61 @@ ItemDisplay[RUNE>20]: %DOT-62%%ORANGE%%RUNENAME% Rune %GRAY%(%GREEN%%RUNENUM%%GR
 
 // PD2 Items
 
+// S8 Throwing Potions
+
+// Small Potions (Hidden at level 25+ unless in Town)
+ItemDisplay[tpfs CLVL<25]: %ORANGE%!%WHITE%Fulminating{%NAME%%BLUE%Deals Fire Damage and Reduces Enemy Fire Resist%NL%%TAN%Small%NL%%GRAY%Fulminating Potion}%CONTINUE%
+ItemDisplay[tpfs !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) CLVL>24]:
+ItemDisplay[tpfs (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) CLVL>24]: %ORANGE%!%WHITE%Fulminating{%NAME%%BLUE%Deals Fire Damage and Reduces Enemy Fire Resist%NL%%TAN%Small%NL%%GRAY%Fulminating Potion}%CONTINUE%
+
+ItemDisplay[tpgs CLVL<25]: %GREEN%!%WHITE%Strangling{%NAME%%BLUE%Deals Poison Damage and Reduces Enemy Poison Resist%NL%%TAN%Small%NL%%GRAY%Strangling Gas Potion}%CONTINUE%
+ItemDisplay[tpgs !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) CLVL>24]:
+ItemDisplay[tpgs (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) CLVL>24]: %GREEN%!%WHITE%Strangling{%NAME%%BLUE%Deals Poison Damage and Reduces Enemy Poison Resist%NL%%TAN%Small%NL%%GRAY%Strangling Gas Potion}%CONTINUE%
+
+ItemDisplay[tpcs CLVL<25]: %BLUE%!%WHITE%Chilling{%NAME%%BLUE%Deals Cold Damage and Reduces Enemy Cold Resist%NL%%TAN%Small%NL%%GRAY%Chilling Potion}%CONTINUE%
+ItemDisplay[tpcs !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) CLVL>24]:
+ItemDisplay[tpcs (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) CLVL>24]: %BLUE%!%WHITE%Chilling{%NAME%%BLUE%Deals Cold Damage and Reduces Enemy Cold Resist%NL%%TAN%Small%NL%%GRAY%Chilling Potion}%CONTINUE%
+
+ItemDisplay[tpls CLVL<25]: %YELLOW%!%WHITE%Charged{%NAME%%BLUE%Deals Lightning Damage and Reduces Enemy Lightning Resist%NL%%TAN%Small%NL%%GRAY%Charged Potion}%CONTINUE%
+ItemDisplay[tpls !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) CLVL>24]:
+ItemDisplay[tpls (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) CLVL>24]: %YELLOW%!%WHITE%Charged{%NAME%%BLUE%Deals Lightning Damage and Reduces Enemy Lightning Resist%NL%%TAN%Small%NL%%GRAY%Charged Potion}%CONTINUE%
+
+// Medium Potions (Hidden at level 50+ unless in Town)
+
+ItemDisplay[tpfm CLVL<50]: %ORANGE%!%WHITE%Exploding{%NAME%%BLUE%Deals Fire Damage and Reduces Enemy Fire Resist%NL%%TAN%Medium%NL%%GRAY%Exploding Potion}%CONTINUE%
+ItemDisplay[tpfm !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) CLVL>49]:
+ItemDisplay[tpfm (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) CLVL>49]: %ORANGE%!%WHITE%Exploding{%NAME%%BLUE%Deals Fire Damage and Reduces Enemy Fire Resist%NL%%TAN%Medium%NL%%GRAY%Exploding Potion}%CONTINUE%
+
+ItemDisplay[tpgm CLVL<50]: %GREEN%!%WHITE%Choking{%NAME%%BLUE%Deals Poison Damage and Reduces Enemy Poison Resist%NL%%TAN%Medium%NL%%GRAY%Choking Gas Potion}%CONTINUE%
+ItemDisplay[tpgm !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) CLVL>49]:
+ItemDisplay[tpgm (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) CLVL>49]: %GREEN%!%WHITE%Choking{%NAME%%BLUE%Deals Poison Damage and Reduces Enemy Poison Resist%NL%%TAN%Medium%NL%%GRAY%Choking Gas Potion}%CONTINUE%
+
+ItemDisplay[tpcm CLVL<50]: %BLUE%!%WHITE%Frost{%NAME%%BLUE%Deals Cold Damage and Reduces Enemy Cold Resist%NL%%TAN%Medium%NL%%GRAY%Frost Potion}%CONTINUE%
+ItemDisplay[tpcm !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) CLVL>49]:
+ItemDisplay[tpcm (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) CLVL>49]: %BLUE%!%WHITE%Frost{%NAME%%BLUE%Deals Cold Damage and Reduces Enemy Cold Resist%NL%%TAN%Medium%NL%%GRAY%Frost Potion}%CONTINUE%
+
+ItemDisplay[tplm CLVL<50]: %YELLOW%!%WHITE%Static{%NAME%%BLUE%Deals Lightning Damage and Reduces Enemy Lightning Resist%NL%%TAN%Medium%NL%%GRAY%Static Potion}%CONTINUE%
+ItemDisplay[tplm !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) CLVL>49]:
+ItemDisplay[tplm (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) CLVL>49]: %YELLOW%!%WHITE%Static{%NAME%%BLUE%Deals Lightning Damage and Reduces Enemy Lightning Resist%NL%%TAN%Medium%NL%%GRAY%Static Potion}%CONTINUE%
+
+// Large Potions (Hidden at level 75+ unless in Town)
+
+ItemDisplay[tpfl CLVL<75]: %ORANGE%!%WHITE%Oil{%NAME%%BLUE%Deals Fire Damage and Reduces Enemy Fire Resist%NL%%TAN%Large%NL%%GRAY%Oil Potion}%CONTINUE%
+ItemDisplay[tpfl !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) CLVL>74]:
+ItemDisplay[tpfl (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) CLVL>74]: %ORANGE%!%WHITE%Oil{%NAME%%BLUE%Deals Fire Damage and Reduces Enemy Fire Resist%NL%%TAN%Large%NL%%GRAY%Oil Potion}%CONTINUE%
+
+ItemDisplay[tpgl CLVL<75]: %GREEN%!%WHITE%Rancid{%NAME%%BLUE%Deals Poison Damage and Reduces Enemy Poison Resist%NL%%TAN%Large%NL%%GRAY%Rancid Gas Potion}%CONTINUE%
+ItemDisplay[tpgl !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) CLVL>74]:
+ItemDisplay[tpgl (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) CLVL>74]: %GREEN%!%WHITE%Rancid{%NAME%%BLUE%Deals Poison Damage and Reduces Enemy Poison Resist%NL%%TAN%Large%NL%%GRAY%Rancid Gas Potion}%CONTINUE%
+
+ItemDisplay[tpcl CLVL<75]: %BLUE%!%WHITE%Freezing{%NAME%%BLUE%Deals Cold Damage and Reduces Enemy Cold Resist%NL%%TAN%Large%NL%%GRAY%Freezing Potion}%CONTINUE%
+ItemDisplay[tpcl !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) CLVL>74]:
+ItemDisplay[tpcl (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) CLVL>74]: %BLUE%!%WHITE%Freezing{%NAME%%BLUE%Deals Cold Damage and Reduces Enemy Cold Resist%NL%%TAN%Large%NL%%GRAY%Freezing Potion}%CONTINUE%
+
+ItemDisplay[tpll CLVL<75]: %YELLOW%!%WHITE%Shock{%NAME%%BLUE%Deals Lightning Damage and Reduces Enemy Lightning Resist%NL%%TAN%Large%NL%%GRAY%Shock Potion}%CONTINUE%
+ItemDisplay[tpll !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) CLVL>74]:
+ItemDisplay[tpll (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) CLVL>74]: %YELLOW%!%WHITE%Shock{%NAME%%BLUE%Deals Lightning Damage and Reduces Enemy Lightning Resist%NL%%TAN%Large%NL%%GRAY%Shock Potion}%CONTINUE%
+
 // WSS and Puzzleboxes
 ItemDisplay[(wss OR lbox OR lpp)]: %DOT-62%%NAME%%CONTINUE%
 
@@ -507,22 +563,29 @@ ItemDisplay[(dcso OR dcbl OR dcho)]: %DOT-62%%ORANGE%%NAME%%CONTINUE%
 ItemDisplay[(rtmo OR rtmv)]: %DOT-62%%ORANGE%%NAME%%CONTINUE%
 
 // DClone Recipe
-ItemDisplay[(dcso OR dcbl OR dcho)]: %NAME%{%NAME%%WHITE%to create %GOLD%Vision of Terror%NL%%WHITE%Transmute %ORANGE%Prime Evil Soul %WHITE%+ %ORANGE%Black Soulstone %WHITE%+ %ORANGE%Pure Demonic Essence}%CONTINUE%
+ItemDisplay[(dcso OR dcbl OR dcho)]: %NAME%{%NAME%%WHITE%to create %RED%Vision of Terror%NL%%WHITE%Transmute %ORANGE%Prime Evil Soul %WHITE%+ %ORANGE%Black Soulstone %WHITE%+ %ORANGE%Pure Demonic Essence}%CONTINUE%
 
 // Rathma Recipe
-ItemDisplay[(rtmo OR rtmv OR cm2f)]: %NAME%{%NAME%%WHITE%to create %GOLD%Voidstone%NL%%WHITE%Transmute %ORANGE%Trang-Oul's Jawbone %WHITE%+ %ORANGE%Splinter of the Void %WHITE%+ %GOLD%Hellfire Ashes}%CONTINUE%
+ItemDisplay[(rtmo OR rtmv OR cm2f)]: %NAME%{%NAME%%WHITE%to create %TEAL%Voidstone%NL%%WHITE%Transmute %ORANGE%Trang-Oul's Jawbone %WHITE%+ %ORANGE%Splinter of the Void %WHITE%+ %GOLD%Hellfire Ashes}%CONTINUE%
 
 // Ancients Recipe
 ItemDisplay[(ubaa OR ubab OR ubac)]: %NAME%{%NAME%%WHITE%to create %GOLD%Relic of the Ancients%NL%%WHITE%Transmute sigils %ORANGE%Madawc %WHITE%+ %ORANGE%Talic %WHITE%+ %ORANGE%Korlic}%CONTINUE%
 
 // Voidstone and Vision of Terror Difficulty Recipes
-ItemDisplay[(rtma OR dcma)]: %GOLD%%NAME%{%NAME%%NL%%ORANGE%Zod Rune:%BLUE% Difficulty 8%NL%%ORANGE%Cham Rune:%BLUE% Difficulty 7%NL%%ORANGE%Jah Rune:%BLUE% Difficulty 6%NL%%ORANGE%Ber Rune:%BLUE% Difficulty 5%NL%%ORANGE%Sur Rune:%BLUE% Difficulty 4%NL%%ORANGE%Lo Rune:%BLUE% Difficulty 3%NL%%ORANGE%Ohm Rune:%BLUE% Difficulty 2%NL%%ORANGE%Vex Rune:%BLUE% Difficulty 1%NL%%TAN%Cube with %ORANGE%Runes %TAN%to increase Boss Difficulty:}%CONTINUE%
+ItemDisplay[dcma]: %RED%Vision of Terror%CONTINUE%
+ItemDisplay[rtma]: %TEAL%Voidstone%CONTINUE%
+ItemDisplay[(rtma OR dcma) STAT185=0]: %NAME%{%NAME%%BLUE%Difficulty Level: 0%NL%%ORANGE%Ber %WHITE%through %ORANGE%Zod Rune:%BLUE% Difficulty 2%NL%%ORANGE%Vex %WHITE%through %ORANGE%Sur Rune:%BLUE% Difficulty 1%NL%%TAN%Transmute with %ORANGE%Runes %TAN%to increase Boss Difficulty:}%CONTINUE%
+ItemDisplay[(rtma OR dcma) STAT185>0]: %NAME%%CONTINUE%
+
+// Flavor Text on Voidstone and Vision of Terror
+ItemDisplay[dcma]: %NAME%{%NAME%%NL%%RED%Not even death can save you from me...}%CONTINUE%
+ItemDisplay[rtma]: %NAME%{%NAME%%NL%%TEAL%If you cannot find the way, wait, and the way will find you.}%CONTINUE%
 
 // Vial of Lightsong
 ItemDisplay[lsvl]: %DOT-62%%NAME%{%NAME%%TAN%(Does not work with Set or Indestructible items)}%CONTINUE%
 
 // Lillith's Mirror
-ItemDisplay[llmr]: %DOT-62%%NAME%{%NAME%%TAN%(Resulting items cannot be Transmuted%NL%%WHITE%Only works with %BLUE%Magic%WHITE%/%YELLOW%Rare %WHITE%Equipment and Jewels)}%CONTINUE%
+ItemDisplay[llmr]: %DOT-62%%NAME%{%NAME%%TAN%(Resulting items cannot be Transmuted)%NL%%WHITE%Only works with %BLUE%Magic%WHITE%/%YELLOW%Rare %WHITE%Equipment and Jewels}%CONTINUE%
 
 // White Maps Notice
 ItemDisplay[(t11 OR t12 OR t13 OR t14 OR t15 OR t16 OR t21 OR t22 OR t23 OR t24 OR t25 OR t26 OR t31 OR t32 OR t33 OR t34 OR t35 OR t36 OR t37 OR t38 OR t39 OR t3a) NMAG]: %DOT-62%%ORANGE%%NAME%%CONTINUE%
@@ -534,42 +597,50 @@ ItemDisplay[(t11 OR t12 OR t13 OR t14 OR t15 OR t16 OR t21 OR t22 OR t23 OR t24 
 ItemDisplay[(t11 OR t12 OR t13 OR t14 OR t15 OR t16 OR t21 OR t22 OR t23 OR t24 OR t25 OR t26 OR t31 OR t32 OR t33 OR t34 OR t35 OR t36 OR t37 OR t38 OR t39 OR t3a) RARE]: %DOT-A8%%YELLOW%%NAME%%CONTINUE%
 
 // Unique Maps Notice
-ItemDisplay[(t51 OR t52) UNI]: %DOT-61%%GOLD%%NAME%%CONTINUE%
+ItemDisplay[(t51 OR t52 OR t53) UNI]: %DOT-61%%GOLD%%NAME%%CONTINUE%
 
 // Map Recipes
 
 // Arcane Orb
-ItemDisplay[imma]: %NAME%{%NAME%%WHITE%Combine with %ORANGE%Map %WHITE%+ %BLUE%Jewel %WHITE%to create %BLUE%Magic Map}%CONTINUE%
+ItemDisplay[imma]: %NAME%{%NAME%%WHITE%Transmute with %BLUE%Jewel%WHITE% to create %TEAL%Infused Arcane Orb%NL%%WHITE%Transmute with %ORANGE%Common Map %WHITE%+ %BLUE%Jewel %WHITE%to create %BLUE%Magic Map}%CONTINUE%
+// Infused Arcane Orb
+ItemDisplay[irma]: %TEAL%Infused Arcane Orb{%WHITE%Transmute with %ORANGE%Common Map %WHITE%to create %BLUE%Magic Map}%CONTINUE%
 
 // Zakarum Orb
-ItemDisplay[imra]: %NAME%{%NAME%%WHITE%Combine with %ORANGE%Map %WHITE%+ %BLUE%Jewel %WHITE%+ %ORANGE%Thul (or greater) %WHITE%to create %YELLOW%Rare Map}%CONTINUE%
+ItemDisplay[imra]: %NAME%{%NAME%%WHITE%Transmute with %BLUE%Jewel %WHITE%+ %ORANGE%Thul (or greater) %WHITE%to create %TEAL%Infused Zakarum Orb%NL%%WHITE%Transmute with %ORANGE%Common Map %WHITE%+ %BLUE%Jewel %WHITE%+ %ORANGE%Thul (or greater) %WHITE%to create %YELLOW%Rare Map}%CONTINUE%
+// Infused Zakarum Orb
+ItemDisplay[irra]: %TEAL%Infused Zakarum Orb{%WHITE%Transmute with %ORANGE%Common Map %WHITE%to create %YELLOW%Rare Map}%CONTINUE%
 
 // Angelic Orb
-ItemDisplay[upma]: %NAME%{%NAME%%WHITE%Combine with %BLUE%Magic Map %WHITE%+ Perfect Skull + %ORANGE%Thul (or greater) %WHITE%to create %YELLOW%Rare Map}%CONTINUE%
-
-// Orb of Destruction
-ItemDisplay[scou]: %NAME%{%NAME%%WHITE%Combine with %BLUE%Magic Map %WHITE%or %YELLOW%Rare Map %WHITE%to downgrade to %ORANGE%Common Map}%CONTINUE%
+ItemDisplay[upma]: %NAME%{%NAME%%WHITE%Transmute with Perfect Skull + %ORANGE%Thul (or greater) %WHITE%to create %TEAL%Infused Angelic Orb%NL%%WHITE%Transmute with %BLUE%Magic Map %WHITE%+ Perfect Skull + %ORANGE%Thul (or greater) %WHITE%to create %YELLOW%Rare Map}%CONTINUE%
+// Infused Angelic Orb
+ItemDisplay[urma]: %TEAL%Infused Angelic Orb{%WHITE%Transmute with %BLUE%Magic Map %WHITE%to create %YELLOW%Rare Map}%CONTINUE%
 
 // Horadrim Orb
-ItemDisplay[rera]: %NAME%{%NAME%%WHITE%Combine with %YELLOW%Rare Map %WHITE%+ Any Perfect Gem + %ORANGE%Thul (or greater) %WHITE%to reroll %YELLOW%Rare Map}%CONTINUE%
+ItemDisplay[rera]: %NAME%{%NAME%%WHITE%Transmute with Any Perfect Gem + %ORANGE%Thul (or greater) %WHITE%to create %TEAL%Infused Horadrim Orb%NL%%WHITE%Transmute with %YELLOW%Rare Map %WHITE%+ Any Perfect Gem + %ORANGE%Thul (or greater) %WHITE%to reroll %YELLOW%Rare Map}%CONTINUE%
+// Infused Horadrim Orb
+ItemDisplay[rrra]: %TEAL%Infused Horadrim Orb{%WHITE%Transmute with %YELLOW%Rare Map %WHITE%to reroll %YELLOW%Rare Map}%CONTINUE%
+
+// Orb of Destruction
+ItemDisplay[scou]: %NAME%{%NAME%%WHITE%Transmute with %BLUE%Magic Map %WHITE%or %YELLOW%Rare Map %WHITE%to downgrade to %ORANGE%Common Map}%CONTINUE%
 
 // Cartographer's Orb
-ItemDisplay[upmp]: %NAME%{%NAME%%WHITE%Combine with 3 same-tier %ORANGE%Maps %WHITE%to upgrade Tier}%CONTINUE%
+ItemDisplay[upmp]: %NAME%{%NAME%%WHITE%Transmute with 3 same-tier %ORANGE%Common Maps %WHITE%to Upgrade Tier}%CONTINUE%
 
 // Horadrim Scarab
-ItemDisplay[scrb]: %NAME%{%NAME%%WHITE%Combine with a Tier 3 %ORANGE%Map %WHITE%to create a %RED%Dungeon}%CONTINUE%
+ItemDisplay[scrb]: %NAME%{%NAME%%WHITE%Transmute with a Tier 3 %ORANGE%Map %WHITE%to create a %RED%Dungeon}%CONTINUE%
 
 // Standard of Heroes
-ItemDisplay[std]: %NAME%{%NAME%%BLUE%+10% Experience, +20% Monster Density, +20% Magic and Gold Find%NL%%WHITE%Combine with a %ORANGE%Map %WHITE%to add %DARK_GREEN%Heroic}%CONTINUE%
+ItemDisplay[std]: %NAME%{%NAME%%BLUE%+10% Experience, +20% Monster Density, +20% Magic and Gold Find%NL%%WHITE%Transmute with a %ORANGE%Map %WHITE%to add %DARK_GREEN%Heroic}%CONTINUE%
 
 // Orb of Fortification
-ItemDisplay[fort]: %GOLD%%NAME%{%NAME%%BLUE%Monsters Drop Loot Twice (does not affect Bosses or Events)%NL%-50% Base Density, +100% Monster Life, +20% Monster Damage, +100% Experience%NL%%WHITE%Combine with a %ORANGE%Map %WHITE%to add %ORANGE%Fortified}%CONTINUE%
+ItemDisplay[fort]: %GOLD%%NAME%{%NAME%%BLUE%Monsters Drop Loot Twice (does not affect Bosses or Events)%NL%-50% Base Density, +100% Monster Life, +20% Monster Damage, +100% Experience%NL%%WHITE%Transmute with a %ORANGE%Map %WHITE%to add %ORANGE%Fortified}%CONTINUE%
 
 // Catalyst Shard
-ItemDisplay[iwss]: %NAME%{%NAME%%BLUE%Map Contains a Random Event%NL%%WHITE%Combine with a %ORANGE%Map %WHITE%to add %ORANGE%Catalyzed}%CONTINUE%
+ItemDisplay[iwss]: %NAME%{%NAME%%BLUE%Map Contains a Random Event%NL%%WHITE%Transmute with a %ORANGE%Map %WHITE%to add %ORANGE%Catalyzed}%CONTINUE%
 
 // Map has Random Event applied (Catalyst Shard)
-ItemDisplay[(t11 OR t12 OR t13 OR t14 OR t15 OR t16 OR t21 OR t22 OR t23 OR t24 OR t25 OR t26 OR t31 OR t32 OR t33 OR t34 OR t35 OR t36 OR t37 OR t38 OR t39 OR t3a OR t51 OR t52) STAT500>0]: %NAME%{%NAME%%ORANGE%Catalyzed%NL%}%CONTINUE%
+ItemDisplay[(t11 OR t12 OR t13 OR t14 OR t15 OR t16 OR t21 OR t22 OR t23 OR t24 OR t25 OR t26 OR t31 OR t32 OR t33 OR t34 OR t35 OR t36 OR t37 OR t38 OR t39 OR t3a OR t51 OR t52 OR t53) STAT500>0]: %NAME%{%NAME%%ORANGE%Catalyzed%NL%}%CONTINUE%
 
 // Immunes on Maps
 
@@ -643,7 +714,7 @@ ItemDisplay[(t41 OR t42 OR t43) NMAG]: %DOT-62%%RED%%NAME%%CONTINUE%
 ItemDisplay[UNI !ID (rin OR amu)]: %BORDER-0E%%GOLD%%NAME%%CONTINUE%
 
 // Any Unidentified Set Ring/Amulet
-ItemDisplay[SET !ID (rin OR amu)]: %BORDER-0E%%GREEN%%NAME%%CONTINUE%
+ItemDisplay[SET !ID (rin OR amu)]: %BORDER-84%%GREEN%%NAME%%CONTINUE%
 
 // Any Unidentified Unique (Exceptional or better)
 ItemDisplay[UNI !ID (EXC OR ELT)]: %BORDER-0E%%GOLD%%NAME%%CONTINUE%
@@ -659,6 +730,7 @@ ItemDisplay[SET !ID NORM CLVL<45]: %BORDER-84%%GREEN%%NAME%%CONTINUE%
 
 // [=|| LORE FLAVORTEXT ||=]
 
+//Will do this on a future update
 //Formatting Reference
 //ItemDisplay[xxx]: %NAME%{%NAME%%GOLD%-~+~-%NL%%ORANGE%bottom line%NL%top line%NL%%GOLD%~-+-~%NL%}%CONTINUE%
 //NOTES: (reanimate) with MULTI (MULTI155,XX>YY):
@@ -1743,15 +1815,15 @@ ItemDisplay[NMAG SOCK>1 !RW SK115=2]: %NAME%%DARK_GREEN%+2%TAN%vigr%CONTINUE%
 ItemDisplay[NMAG SOCK=0 !RW SK115=3]: %NAME%%GREEN%+3%TAN%vigr%CONTINUE%
 ItemDisplay[NMAG SOCK>1 !RW SK115=3]: %NAME%%GREEN%+3%TAN%vigr%CONTINUE%
 
-// Scepters with skills to Conversion
-ItemDisplay[NMAG SOCK=0 !RW SK116=1]: %NAME%%DARK_GREEN%+1%TAN%cvrsn%CONTINUE%
-ItemDisplay[NMAG SOCK>1 !RW SK116=1]: %NAME%%DARK_GREEN%+1%TAN%cvrsn%CONTINUE%
+// Scepters with skills to Holy Sword (May not be relevant - update TBD)
+ItemDisplay[NMAG SOCK=0 !RW SK116=1]: %NAME%%DARK_GREEN%+1%TAN%hswd%CONTINUE%
+ItemDisplay[NMAG SOCK>1 !RW SK116=1]: %NAME%%DARK_GREEN%+1%TAN%hswd%CONTINUE%
 
-ItemDisplay[NMAG SOCK=0 !RW SK116=2]: %NAME%%DARK_GREEN%+2%TAN%cvrsn%CONTINUE%
-ItemDisplay[NMAG SOCK>1 !RW SK116=2]: %NAME%%DARK_GREEN%+2%TAN%cvrsn%CONTINUE%
+ItemDisplay[NMAG SOCK=0 !RW SK116=2]: %NAME%%DARK_GREEN%+2%TAN%hswd%CONTINUE%
+ItemDisplay[NMAG SOCK>1 !RW SK116=2]: %NAME%%DARK_GREEN%+2%TAN%hswd%CONTINUE%
 
-ItemDisplay[NMAG SOCK=0 !RW SK116=3]: %NAME%%GREEN%+3%TAN%cvrsn%CONTINUE%
-ItemDisplay[NMAG SOCK>1 !RW SK116=3]: %NAME%%GREEN%+3%TAN%cvrsn%CONTINUE%
+ItemDisplay[NMAG SOCK=0 !RW SK116=3]: %NAME%%GREEN%+3%TAN%hswd%CONTINUE%
+ItemDisplay[NMAG SOCK>1 !RW SK116=3]: %NAME%%GREEN%+3%TAN%hswd%CONTINUE%
 
 // Scepters with skills to Holy Shield
 ItemDisplay[NMAG SOCK=0 !RW SK117=1]: %NAME%%DARK_GREEN%+1%TAN%hshld%CONTINUE%
@@ -3276,6 +3348,8 @@ ItemDisplay[NMAG CHEST SOCK=3 !RW CLVL>24 (FILTLVL>0 AND FILTLVL<2) BARBARIAN]: 
 ItemDisplay[NMAG CHEST SOCK=3 !RW CLVL<25 (FILTLVL>0 AND FILTLVL<2) !BARBARIAN]: %NAME%{%NAME%%RED%Myth: Hel Amn Nef (Level 25) (Barbarian)%NL%}%CONTINUE%
 ItemDisplay[NMAG CHEST SOCK=3 !RW CLVL>24 (FILTLVL>0 AND FILTLVL<2) !BARBARIAN]: %NAME%{%NAME%%TAN%Myth: %ORANGE%Hel Amn Nef %RED%(Barbarian)%NL%}%CONTINUE%
 
+ItemDisplay[NMAG CHEST SOCK=3 !RW CLVL<39 (FILTLVL>1 AND FILTLVL<3)]: %NAME%{%NAME%%RED%Hustle: Shael Ko Eld (Level 39)%NL%}%CONTINUE%
+ItemDisplay[NMAG CHEST SOCK=3 !RW CLVL>38 (FILTLVL>1 AND FILTLVL<3)]: %NAME%{%NAME%%TAN%Hustle: %ORANGE%Shael Ko Eld%NL%}%CONTINUE%
 ItemDisplay[NMAG CHEST SOCK=3 !RW CLVL<41 (FILTLVL>1 AND FILTLVL<3)]: %NAME%{%NAME%%RED%Lionheart: Hel Lum Fal (Level 41)%NL%}%CONTINUE%
 ItemDisplay[NMAG CHEST SOCK=3 !RW CLVL>40 (FILTLVL>1 AND FILTLVL<3)]: %NAME%{%NAME%%TAN%Lionheart: %ORANGE%Hel Lum Fal%NL%}%CONTINUE%
 ItemDisplay[NMAG CHEST SOCK=3 !RW CLVL<43 (FILTLVL>1 AND FILTLVL<3)]: %NAME%{%NAME%%RED%Wealth: Lem Ko Tir (Level 43)%NL%}%CONTINUE%
@@ -3319,6 +3393,8 @@ ItemDisplay[NMAG CHEST SOCK=4 !RW CLVL<61 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NA
 ItemDisplay[NMAG CHEST SOCK=4 !RW CLVL>60 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%TAN%Bramble: %ORANGE%Ral Ohm Sur Eth%NL%}%CONTINUE%
 ItemDisplay[NMAG CHEST SOCK=4 !RW CLVL<63 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%RED%Chains of Honor: Dol Um Ber Ist (Level 63)%NL%}%CONTINUE%
 ItemDisplay[NMAG CHEST SOCK=4 !RW CLVL>62 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%TAN%Chains of Honor: %ORANGE%Dol Um Ber Ist%NL%}%CONTINUE%
+ItemDisplay[NMAG CHEST SOCK=4 !RW CLVL<69 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%RED%Innocence: Gul Lem Zod Hel (Level 69)%NL%}%CONTINUE%
+ItemDisplay[NMAG CHEST SOCK=4 !RW CLVL>68 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%TAN%Innocence: %ORANGE%Gul Lem Zod Hel%NL%}%CONTINUE%
 
 // Shield Runewords
 
@@ -3376,8 +3452,6 @@ ItemDisplay[NMAG (WP9 OR WP10) SOCK=5 !RW CLVL<69 (FILTLVL>2 AND FILTLVL<4)]: %N
 ItemDisplay[NMAG (WP9 OR WP10) SOCK=5 !RW CLVL>68 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%TAN%Zenith: %ORANGE%Jah Zod Ort Thul Ral%NL%}%CONTINUE%
 ItemDisplay[NMAG (WP9 OR WP10) SOCK=6 !RW CLVL<67 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%RED%Asylum: Gul Cham Hel Jah Dol Um (Level 67)%NL%}%CONTINUE%
 ItemDisplay[NMAG (WP9 OR WP10) SOCK=6 !RW CLVL>66 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%TAN%Asylum: %ORANGE%Gul Cham Hel Jah Dol Um%NL%}%CONTINUE%
-
-
 
 // Swords
 
@@ -3445,6 +3519,11 @@ ItemDisplay[NMAG SWORD SOCK=6 !RW CLVL<65 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NA
 ItemDisplay[NMAG SWORD SOCK=6 !RW CLVL>64 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%TAN%Last Wish: %ORANGE%Jah Mal Jah Sur Jah Ber%NL%}%CONTINUE%
 ItemDisplay[NMAG SWORD SOCK=6 !RW CLVL<69 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%RED%Breath of the Dying: Vex Hel El Eld Zod Eth (Level 69)%NL%}%CONTINUE%
 ItemDisplay[NMAG SWORD SOCK=6 !RW CLVL>68 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%TAN%Breath of the Dying: %ORANGE%Vex Hel El Eld Zod Eth%NL%}%CONTINUE%
+
+// Two-Handed Swords
+
+ItemDisplay[NMAG (gsd OR 9gd OR 7gd) SOCK=6 !RW CLVL<67 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%RED%Asylum: Gul Cham Hel Jah Dol Um (Level 67)%NL%}%CONTINUE%
+ItemDisplay[NMAG (gsd OR 9gd OR 7gd) SOCK=6 !RW CLVL>66 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%TAN%Asylum: %ORANGE%Gul Cham Hel Jah Dol Um%NL%}%CONTINUE%
 
 
 // Axes
@@ -4556,6 +4635,7 @@ ItemDisplay[mp5]: %BLUE%!%WHITE%MP{%GRAY%Super Mana Potion}
 ItemDisplay[rvs]: %PURPLE%!%WHITE%Rejuv{%GRAY%Rejuvination Potion}
 ItemDisplay[rvl]: %PURPLE%!%WHITE%Full Rejuv{%GRAY%Full Rejuvination Potion}
 ItemDisplay[yps]: %DARK_GREEN%!%WHITE%Anti{%GRAY%Antidote Potion}
+ItemDisplay[wms]: %YELLOW%!%WHITE%Thaw{%GRAY%Thawing Potion}
 
 // HIDING ITEMS
 
@@ -4578,12 +4658,12 @@ ItemDisplay[(gcv OR gcy OR gcb OR gcg OR gcr OR gcw OR skc OR gfv OR gfy OR gfb 
 //ItemDisplay[key !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]:
 
 // Hide Greater Health and Mana Potions and Below
-ItemDisplay[(hp4 OR mp4 OR hp3 OR hp2 OR hp1 OR mp3 OR mp2 OR mp1) CLVL>75]:
+ItemDisplay[(hp4 OR mp4 OR hp3 OR hp2 OR hp1 OR mp3 OR mp2 OR mp1) CLVL>70]:
 
 // Hide Arrows & Bolts if not Magic/Rare
 ItemDisplay[(aqv OR cqv) NMAG !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) CLVL>6]:
 
-// Hide Choking, Exploding, Fulminating, Oil, Rancid, Strangling, Thawing, Stamina, ID and TP Scrolls
+// Hide Choking, Exploding, Fulminating, Oil, Rancid, Strangling, Thawing, Stamina, ID and TP Scrolls unless in Town
 ItemDisplay[(gpm OR opm OR opl OR ops OR gps OR gpl OR wms OR vps OR tsc OR isc) !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) CLVL>25]:
 
 // Hide Gold
