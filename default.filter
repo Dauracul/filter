@@ -6,6 +6,9 @@ ItemDisplayFilterName[]:Mid Runeword Notes
 ItemDisplayFilterName[]:High Runeword Notes
 ItemDisplayFilterName[]:Lore Flavor Text (NYI)
 
+// Fix to show names of items in gambling screen
+ItemDisplay[(WEAPON OR ARMOR) SHOP NMAG !ID]: %NAME%
+
 // Scrolls in Teal Color (Gray for DDraw)
 ItemDisplay[isc]: %TEAL%%NAME%%CONTINUE%
 ItemDisplay[tsc]: %TEAL%%NAME%%CONTINUE%
@@ -4672,6 +4675,3 @@ ItemDisplay[GOLD<5000 CLVL>79]:
 
 // Hide all Normal and Exceptional items in Maps (Except uniques/sets/magic/rare)
 ItemDisplay[(NORM OR EXC) NMAG MAPID>137]:
-
-//Show me names of items in gambling screen
-ItemDisplay[(WEAPON OR ARMOR) NMAG !ID]: %NAME%
