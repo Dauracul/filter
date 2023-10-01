@@ -9,6 +9,9 @@ ItemDisplayFilterName[]:Lore Flavor Text (NYI)
 // Fix to show names of items in gambling screen
 ItemDisplay[(WEAPON OR ARMOR) SHOP NMAG !ID]: %NAME%
 
+// Quest items
+ItemDisplay[(bks OR bkd OR tr1 OR ass OR j34 OR g34 OR bbb OR qbr OR qey OR qhr OR mss OR ice OR hdm OR msf OR vip OR hst OR g33 OR qf1 OR qf2 OR hfh)]: %NAME%{%NAME%%CORAL%Quest Item}
+
 // Scrolls in Teal Color (Gray for DDraw)
 ItemDisplay[isc]: %TEAL%%NAME%%CONTINUE%
 ItemDisplay[tsc]: %TEAL%%NAME%%CONTINUE%
@@ -3436,9 +3439,19 @@ ItemDisplay[NMAG (WP9 OR WP10) SOCK=3 !RW CLVL<25 (FILTLVL>0 AND FILTLVL<2)]: %N
 ItemDisplay[NMAG (WP9 OR WP10) SOCK=3 !RW CLVL>24 (FILTLVL>0 AND FILTLVL<2)]: %NAME%{%NAME%%TAN%Edge: %ORANGE%Tir Tal Amn%NL%}%CONTINUE%
 ItemDisplay[NMAG (WP9 OR WP10) SOCK=3 !RW CLVL<39 (FILTLVL>1 AND FILTLVL<3)]: %NAME%{%NAME%%RED%Melody: Shael Ko Nef (Level 39)%NL%}%CONTINUE%
 ItemDisplay[NMAG (WP9 OR WP10) SOCK=3 !RW CLVL>38 (FILTLVL>1 AND FILTLVL<3)]: %NAME%{%NAME%%TAN%Melody: %ORANGE%Shael Ko Nef%NL%}%CONTINUE%
+ItemDisplay[NMAG (WP9 OR WP10) SOCK=3 !RW CLVL<49 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%RED%Venom: Tal Dol Mal (Level 49)%NL%}%CONTINUE%
+ItemDisplay[NMAG (WP9 OR WP10) SOCK=3 !RW CLVL>48 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%TAN%Venom: %ORANGE%Tal Dol Mal%NL%}%CONTINUE%
+ItemDisplay[NMAG (WP9 OR WP10) SOCK=3 !RW CLVL<67 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%RED%Plague: Cham Fal Um (Level 67)%NL%}%CONTINUE%
+ItemDisplay[NMAG (WP9 OR WP10) SOCK=3 !RW CLVL>66 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%TAN%Plague: %ORANGE%Cham Fal Um%NL%}%CONTINUE%
 
 ItemDisplay[NMAG (WP9 OR WP10) SOCK=4 !RW CLVL<39 (FILTLVL>1 AND FILTLVL<3)]: %NAME%{%NAME%%RED%Harmony: Tir Ith Sol Ko (Level 39)%NL%}%CONTINUE%
 ItemDisplay[NMAG (WP9 OR WP10) SOCK=4 !RW CLVL>38 (FILTLVL>1 AND FILTLVL<3)]: %NAME%{%NAME%%TAN%Harmony: %ORANGE%Tir Ith Sol Ko%NL%}%CONTINUE%
+ItemDisplay[NMAG (WP9 OR WP10) SOCK=4 !RW CLVL<43 (FILTLVL>1 AND FILTLVL<3)]: %NAME%{%NAME%%RED%Passion: Dol Ort Eld Lem (Level 43)%NL%}%CONTINUE%
+ItemDisplay[NMAG (WP9 OR WP10) SOCK=4 !RW CLVL>42 (FILTLVL>1 AND FILTLVL<3)]: %NAME%{%NAME%%TAN%Passion: %ORANGE%Dol Ort Eld Lem%NL%}%CONTINUE%
+ItemDisplay[NMAG (WP9 OR WP10) SOCK=4 !RW CLVL<43 (FILTLVL>1 AND FILTLVL<3)]: %NAME%{%NAME%%RED%Voice of Reason: Lem Ko El Eld (Level 43)%NL%}%CONTINUE%
+ItemDisplay[NMAG (WP9 OR WP10) SOCK=4 !RW CLVL>42 (FILTLVL>1 AND FILTLVL<3)]: %NAME%{%NAME%%TAN%Voice of Reason: %ORANGE%Lem Ko El Eld%NL%}%CONTINUE%
+ItemDisplay[NMAG (WP9 OR WP10) SOCK=4 !RW CLVL<59 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%RED%Fortitude: El Sol Dol Lo (Level 59)%NL%}%CONTINUE%
+ItemDisplay[NMAG (WP9 OR WP10) SOCK=4 !RW CLVL>58 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%TAN%Fortitude: %ORANGE%El Sol Dol Lo%NL%}%CONTINUE%
 ItemDisplay[NMAG (WP9 OR WP10) SOCK=4 !RW CLVL<63 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%RED%Wrath: Pul Lum Ber Mal (Level 63)%NL%}%CONTINUE%
 ItemDisplay[NMAG (WP9 OR WP10) SOCK=4 !RW CLVL>62 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%TAN%Wrath: %ORANGE%Pul Lum Ber Mal%NL%}%CONTINUE%
 ItemDisplay[NMAG (WP9 OR WP10) SOCK=4 !RW CLVL<65 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%RED%Faith: Ohm Jah Lem Eld (Level 65)%NL%}%CONTINUE%
@@ -3447,13 +3460,24 @@ ItemDisplay[NMAG (WP9 OR WP10) SOCK=4 !RW CLVL<65 (FILTLVL>2 AND FILTLVL<4)]: %N
 ItemDisplay[NMAG (WP9 OR WP10) SOCK=4 !RW CLVL>64 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%TAN%Ice: %ORANGE%Amn Shael Jah Lo%NL%}%CONTINUE%
 ItemDisplay[NMAG (WP9 OR WP10) SOCK=4 !RW CLVL<65 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%RED%Brand: Jah Lo Mal Gul (Level 65)%NL%}%CONTINUE%
 ItemDisplay[NMAG (WP9 OR WP10) SOCK=4 !RW CLVL>64 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%TAN%Brand: %ORANGE%Jah Lo Mal Gul%NL%}%CONTINUE%
+ItemDisplay[NMAG (WP9 OR WP10) SOCK=4 !RW CLVL<65 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%RED%Phoenix: Vex Vex Lo Jah (Level 65)%NL%}%CONTINUE%
+ItemDisplay[NMAG (WP9 OR WP10) SOCK=4 !RW CLVL>64 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%TAN%Phoenix: %ORANGE%Vex Vex Lo Jah%NL%}%CONTINUE%
+ItemDisplay[NMAG (WP9 OR WP10) SOCK=4 !RW CLVL<67 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%RED%Hand of Justice: Sur Cham Amn Lo (Level 67)%NL%}%CONTINUE%
+ItemDisplay[NMAG (WP9 OR WP10) SOCK=4 !RW CLVL>66 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%TAN%Hand of Justice: %ORANGE%Sur Cham Amn Lo%NL%}%CONTINUE%
 
+ItemDisplay[NMAG (WP9 OR WP10) SOCK=5 !RW CLVL<57 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%RED%Call to Arms: Amn Ral Mal Ist Ohm (Level 57)%NL%}%CONTINUE%
+ItemDisplay[NMAG (WP9 OR WP10) SOCK=5 !RW CLVL>56 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%TAN%Call to Arms: %ORANGE%Amn Ral Mal Ist Ohm%NL%}%CONTINUE%
 ItemDisplay[NMAG (WP9 OR WP10) SOCK=5 !RW CLVL<67 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%RED%Mist: Cham Shael Gul Thul Ith (Level 67)%NL%}%CONTINUE%
 ItemDisplay[NMAG (WP9 OR WP10) SOCK=5 !RW CLVL>66 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%TAN%Mist: %ORANGE%Cham Shael Gul Thul Ith%NL%}%CONTINUE%
 ItemDisplay[NMAG (WP9 OR WP10) SOCK=5 !RW CLVL<69 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%RED%Zenith: Jah Zod Ort Thul Ral (Level 69)%NL%}%CONTINUE%
 ItemDisplay[NMAG (WP9 OR WP10) SOCK=5 !RW CLVL>68 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%TAN%Zenith: %ORANGE%Jah Zod Ort Thul Ral%NL%}%CONTINUE%
+
+ItemDisplay[NMAG (WP9 OR WP10) SOCK=6 !RW CLVL<55 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%RED%Silence: Dol Eld Hel Ist Tir Vex (Level 55)%NL%}%CONTINUE%
+ItemDisplay[NMAG (WP9 OR WP10) SOCK=6 !RW CLVL>54 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%TAN%Silence: %ORANGE%Dol Eld Hel Ist Tir Vex%NL%}%CONTINUE%
 ItemDisplay[NMAG (WP9 OR WP10) SOCK=6 !RW CLVL<67 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%RED%Asylum: Gul Cham Hel Jah Dol Um (Level 67)%NL%}%CONTINUE%
 ItemDisplay[NMAG (WP9 OR WP10) SOCK=6 !RW CLVL>66 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%TAN%Asylum: %ORANGE%Gul Cham Hel Jah Dol Um%NL%}%CONTINUE%
+ItemDisplay[NMAG (WP9 OR WP10) SOCK=6 !RW CLVL<69 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%RED%Breath of the Dying: Vex Hel El Eld Zod Eth (Level 69)%NL%}%CONTINUE%
+ItemDisplay[NMAG (WP9 OR WP10) SOCK=6 !RW CLVL>68 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%TAN%Breath of the Dying: %ORANGE%Vex Hel El Eld Zod Eth%NL%}%CONTINUE%
 
 // Swords
 
@@ -4084,7 +4108,7 @@ ItemDisplay[NMAG (WP9 OR WP10) !RW SOCK=2 (FILTLVL>1 AND FILTLVL<3)]: %NAME%{%NA
 ItemDisplay[NMAG (WP9 OR WP10) !RW SOCK=2 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%RED%None (Incorrect Sockets, Change Filter Level)%NL%%WHITE%Runewords:%NL%%WHITE%Filter Level: 3 (High Runewords)%NL%}%CONTINUE%
 ItemDisplay[NMAG (WP9 OR WP10) !RW SOCK=3 (FILTLVL>0 AND FILTLVL<2)]: %NAME%{%NAME%%WHITE%Runewords:%NL%%WHITE%Filter Level: 1 (Low Runewords)%NL%}%CONTINUE%
 ItemDisplay[NMAG (WP9 OR WP10) !RW SOCK=3 (FILTLVL>1 AND FILTLVL<3)]: %NAME%{%NAME%%WHITE%Runewords:%NL%%WHITE%Filter Level: 2 (Mid Runewords)%NL%}%CONTINUE%
-ItemDisplay[NMAG (WP9 OR WP10) !RW SOCK=3 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%RED%None (Incorrect Sockets, Change Filter Level)%NL%%WHITE%Runewords:%NL%%WHITE%Filter Level: 3 (High Runewords)%NL%}%CONTINUE%
+ItemDisplay[NMAG (WP9 OR WP10) !RW SOCK=3 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%WHITE%Runewords:%NL%%WHITE%Filter Level: 3 (High Runewords)%NL%}%CONTINUE%
 ItemDisplay[NMAG (WP9 OR WP10) !RW SOCK=4 (FILTLVL>0 AND FILTLVL<2)]: %NAME%{%NAME%%RED%None (Incorrect Sockets, Change Filter Level)%NL%%WHITE%Runewords:%NL%%WHITE%Filter Level: 1 (Low Runewords)%NL%}%CONTINUE%
 ItemDisplay[NMAG (WP9 OR WP10) !RW SOCK=4 (FILTLVL>1 AND FILTLVL<3)]: %NAME%{%NAME%%WHITE%Runewords:%NL%%WHITE%Filter Level: 2 (Mid Runewords)%NL%}%CONTINUE%
 ItemDisplay[NMAG (WP9 OR WP10) !RW SOCK=4 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%WHITE%Runewords:%NL%%WHITE%Filter Level: 3 (High Runewords)%NL%}%CONTINUE%
@@ -4093,7 +4117,7 @@ ItemDisplay[NMAG (WP9 OR WP10) !RW SOCK=5 (FILTLVL>0 AND FILTLVL<2)]: %NAME%{%NA
 ItemDisplay[NMAG (WP9 OR WP10) !RW SOCK=5 (FILTLVL>1 AND FILTLVL<3)]: %NAME%{%NAME%%RED%None (Incorrect Sockets, Change Filter Level)%NL%%WHITE%Runewords:%NL%%WHITE%Filter Level: 2 (Mid Runewords)%NL%}%CONTINUE%
 ItemDisplay[NMAG (WP9 OR WP10) !RW SOCK=6 (FILTLVL>0 AND FILTLVL<2)]: %NAME%{%NAME%%RED%None (Incorrect Sockets, Change Filter Level)%NL%%WHITE%Runewords:%NL%%WHITE%Filter Level: 1 (Low Runewords)%NL%}%CONTINUE%
 ItemDisplay[NMAG (WP9 OR WP10) !RW SOCK=6 (FILTLVL>1 AND FILTLVL<3)]: %NAME%{%NAME%%RED%None (Incorrect Sockets, Change Filter Level)%NL%%WHITE%Runewords:%NL%%WHITE%Filter Level: 2 (Mid Runewords)%NL%}%CONTINUE%
-ItemDisplay[NMAG (WP9 OR WP10) !RW SOCK=6 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%RED%None (Incorrect Sockets, Change Filter Level)%NL%%WHITE%Runewords:%NL%%WHITE%Filter Level: 3 (High Runewords)%NL%}%CONTINUE%
+ItemDisplay[NMAG (WP9 OR WP10) !RW SOCK=6 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%WHITE%Runewords:%NL%%WHITE%Filter Level: 3 (High Runewords)%NL%}%CONTINUE%
 
 ItemDisplay[NMAG HELM !RW SOCK>1 (FILTLVL>0 AND FILTLVL<2)]: %NAME%{%NAME%%WHITE%Runewords:%NL%%WHITE%Filter Level: 1 (Low Runewords)}%CONTINUE%
 ItemDisplay[NMAG HELM !RW (SOCK>1 AND SOCK<3) (FILTLVL>1 AND FILTLVL<3)]: %NAME%{%NAME%%RED%None (Incorrect Sockets, Change Filter Level)%NL%%WHITE%Runewords:%NL%%WHITE%Filter Level: 2 (Mid Runewords)}%CONTINUE%
