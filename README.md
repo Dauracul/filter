@@ -13,13 +13,12 @@ This is intended to be a very non-invasive loot filter. No bright neon flashy co
 - All Normal and Exceptional Set/Unique/Rare/Crafted items will display the Cube recipe required to upgrade to the next tier
 - All weapons will display their base weapon speeds
 - All unsocketed non-magic bases will display Cube recipe to add sockets
-- Super Healing, Super Mana, Rejuvenation, Full Rejuvenation and Antidote potions are shorthanded with colored "!" tags
+- Potions and Scrolls are shorthanded with colored "!" tags
 - All Gems below Flawless quality will be hidden after level 40, unless standing in Town
-- All Health and Mana Potions below Super will be hidden above level 75
 - Arrows/Bolts are hidden past level 6, unless Magic or Rare
 - All Thawing, Stamina potions, and Scroll of Identify and Scroll of Town Portal are hidden above level 25 unless in Town
 - Gold stacks will be hidden as you level (<100 starting, <1000 at level 18, <5000 at level 80)
-- New S8 Throwing Potions will be hidden at level 25 (small), level 50 (medium), and level 75 (large) unless in Town
+- New S8 Throwing Potions will be hidden at level 10 (small), level 15 (medium), and level 20 (large) unless in Town
 
 # Runewords
 - All non-magic bases will display all available runewords they are capable of based on their current socket count and base (based on Filter Level)
@@ -28,7 +27,7 @@ This is intended to be a very non-invasive loot filter. No bright neon flashy co
 - Filter Level 3 Runewords include all remaining endgame runewords
 
 # Map Features
-- Simple immunity notes will be labeled on Magic or higher Maps
+- Simple immunity notes will be labeled on all Maps
 - Map cube recipes are attached to the materials sold by Anya
 - All Normal and Exceptional bases will be hidden in maps, unless Unique/Set/Magic/Rare
 
