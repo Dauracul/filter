@@ -56,6 +56,3 @@ NECROMANCER:
 
 AMAZON:
 - All Amazon Javelins and Bows will display +Javelin and Spear or +Bow and Crossbow skill tree automod rolls
-
-# Upcoming Features (TBD)
-- Lore flavor text on items is in the works and will be isolated to Filter Level 4
