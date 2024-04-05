@@ -29,7 +29,7 @@ This is intended to be a very non-invasive loot filter. No bright neon flashy co
 
 # Map Features
 - Simple immunity notes will be labeled on all Maps
-- Map cube recipes are attached to the materials sold by Anya
+- Map cube recipes are attached to the materials sold by Anya (Note: This is now on the items by default as of Season 9)
 - All Normal and Exceptional bases will be hidden in maps, unless Unique/Set/Magic/Rare
 
 # Class-specific
@@ -39,6 +39,7 @@ DRUID:
 ASSASSIN:
 - Kick damage is now displayed on Set boots (only while playing an Assassin)
 - All Claws will display staffmod rolls
+- All Daggers will display staffmod rolls (Martial Arts skills)
 
 PALADIN:
 - All Scepters will display staffmod rolls
@@ -53,6 +54,7 @@ SORCERESS:
 
 NECROMANCER:
 - All Wands and Shrunken Heads will display staffmod rolls
+- All Daggers will display staffmod rolls (Poison Strike)
 
 AMAZON:
 - All Amazon Javelins and Bows will display +Javelin and Spear or +Bow and Crossbow skill tree automod rolls
