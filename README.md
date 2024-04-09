@@ -20,6 +20,7 @@ This is intended to be a very non-invasive loot filter. No bright neon flashy co
 - Gold stacks will be hidden as you level (<100 starting, <1000 at level 18, <5000 at level 80)
 - New S8 Throwing Potions will be hidden at level 10 (small), level 15 (medium), and level 20 (large) unless in Town
 - Non-magic bases will now have a tag to indicate Normal, Exceptional, or Elite quality (Examples: Cap¹, War Hat², Shako³)
+- Charms will now display rolled properties when Identified within the item names
 
 # Runewords
 - All non-magic bases will display all available runewords they are capable of based on their current socket count and base (based on Filter Level)
