@@ -52,11 +52,20 @@ DRUID:
 ASSASSIN:
 - Kick damage is now displayed on Set boots (only while playing an Assassin)
 - All Claws will display staffmod rolls
+
+![image](https://github.com/Dauracul/filter/assets/111398486/6d74bda8-a471-41ea-9119-364554bb4727)
+
 - All Daggers will display staffmod rolls (Martial Arts skills)
 
 PALADIN:
 - All Scepters will display staffmod rolls
+
+![image](https://github.com/Dauracul/filter/assets/111398486/fb3d3e2e-a1fd-437c-8f48-8e2a0478760e)
+
 - All Paladin shields will display the Enhanced Damage % / Attack Rating or All Resist automod rolls
+
+![image](https://github.com/Dauracul/filter/assets/111398486/12f17ce0-30aa-47b0-a757-7b7511935d23)
+
 
 BARBARIAN:
 - All Barb helms will display staffmod rolls
@@ -65,8 +74,14 @@ SORCERESS:
 - All Orbs and Staves will display staffmod rolls
 - All Orbs will display +Life or +Mana automod rolls
 
+![image](https://github.com/Dauracul/filter/assets/111398486/f1eb9eda-bd6a-4d36-9b23-5049d45b6d8f)
+
+
 NECROMANCER:
 - All Wands and Shrunken Heads will display staffmod rolls
+
+![image](https://github.com/Dauracul/filter/assets/111398486/c521579c-2f05-440d-9feb-2c1a8cd9cd42)
+
 - All Daggers will display staffmod rolls (Poison Strike)
 
 AMAZON:
