@@ -21,6 +21,9 @@ This is intended to be a very non-invasive loot filter. No bright neon flashy co
 - All weapons will display their base weapon speeds
 - All unsocketed non-magic bases will display Cube recipe to add sockets
 - Potions and Scrolls are shorthanded with colored "!" tags
+
+![image](https://github.com/Dauracul/filter/assets/111398486/f3c7baae-1b19-4f0c-8afd-b6946eba144f)
+
 - All Gems below Flawless quality will be hidden after level 40, unless standing in Town
 - Arrows/Bolts are hidden past level 6, unless Magic or Rare
 - All Thawing, Stamina potions, and Scroll of Identify and Scroll of Town Portal are hidden above level 25 unless in Town
