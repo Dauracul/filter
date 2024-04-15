@@ -60,6 +60,9 @@ ASSASSIN:
 
 - All Daggers will display staffmod rolls (Martial Arts skills)
 
+![image](https://github.com/Dauracul/filter/assets/111398486/404ff78b-c931-4dee-ae86-b0166cd40937)
+
+
 PALADIN:
 - All Scepters will display staffmod rolls
 
@@ -86,6 +89,9 @@ NECROMANCER:
 ![image](https://github.com/Dauracul/filter/assets/111398486/c521579c-2f05-440d-9feb-2c1a8cd9cd42)
 
 - All Daggers will display staffmod rolls (Poison Strike)
+
+![image](https://github.com/Dauracul/filter/assets/111398486/9998784f-6143-45c7-ae5c-176781857158)
+
 
 AMAZON:
 - All Amazon Javelins and Bows will display +Javelin and Spear or +Bow and Crossbow skill tree automod rolls
