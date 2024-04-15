@@ -7,6 +7,8 @@ This is intended to be a very non-invasive loot filter. No bright neon flashy co
 - Superior tag is shorthanded in Red for Weapon bases and Blue for Armor bases, and will display the % of Enhanced Defense or Enhanced Damage
 - All Runes will trigger a drop notification
 - Stacked Runes will display all available crafting recipes
+![image](https://github.com/Dauracul/filter/assets/111398486/83089ac7-0678-4829-b194-77990377c2c1)
+
 - Unidentified Uniques and Sets will trigger a drop notification at Exceptional and above, Normal quality Uniques/Sets will trigger notifications until level 45
 - All Charms trigger a notification at all levels
 - All Jewels trigger a notification at all levels
@@ -28,8 +30,13 @@ This is intended to be a very non-invasive loot filter. No bright neon flashy co
 - Filter Level 2 Runewords include runes roughly as high as Um
 - Filter Level 3 Runewords include all remaining endgame runewords
 
+![image](https://github.com/Dauracul/filter/assets/111398486/ae6df7bb-7eb6-4ff7-a9a4-4b49fa572e4d)![image](https://github.com/Dauracul/filter/assets/111398486/a0e6d9a3-c4de-44dc-9081-c03829b05cf1)![image](https://github.com/Dauracul/filter/assets/111398486/4c5c9517-8d04-4058-a835-72233cd99bde)
+
 # Map Features
 - Simple immunity notes will be labeled on all Maps
+
+![image](https://github.com/Dauracul/filter/assets/111398486/ce708166-c86a-431f-87b4-a8887197c0b8)
+
 - Map cube recipes are attached to the materials sold by Anya (Note: This is now on the items by default as of Season 9)
 - All Normal and Exceptional bases will be hidden in maps, unless Unique/Set/Magic/Rare
 
