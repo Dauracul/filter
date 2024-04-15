@@ -5,6 +5,11 @@ This is intended to be a very non-invasive loot filter. No bright neon flashy co
 - Number of sockets shown on all bases
 - Ethereal items tagged with (Eth)
 - Superior tag is shorthanded in Red for Weapon bases and Blue for Armor bases, and will display the % of Enhanced Defense or Enhanced Damage
+
+![image](https://github.com/Dauracul/filter/assets/111398486/e6d4ec9d-bdc2-4de6-84ad-77d199d34c7c)
+
+![image](https://github.com/Dauracul/filter/assets/111398486/d01231c6-02c5-4f6a-a2ad-542d4172dbd3)
+
 - All Runes will trigger a drop notification
 - Stacked Runes will display all available crafting recipes
 ![image](https://github.com/Dauracul/filter/assets/111398486/83089ac7-0678-4829-b194-77990377c2c1)
