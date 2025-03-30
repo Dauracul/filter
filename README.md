@@ -1,6 +1,8 @@
 # Dauracul's PD2 Loot Filter
 This is intended to be a very non-invasive loot filter and closer to to the "original Diablo 2 loot experience". No bright neon flashy colors, just clean and informative but it still will highlight items of value. Great for players who are already familiar with loot they are seeking out and for crafters who would like upfront information on cube recipes.
 
+NOTE: This readme is no longer regularly updated with each filter update. For latest changes check the Scroll of Identify at vendors to confirm the filter version and updated date, and view the .filter file itself for patch notes.
+
 # General Features
 - (NEW) The starter inferior equipment on all classes will now have unique names and flavor text (all Inferior items are hidden after level 2). Just some neat touches to enjoy when you jump into a fresh character
 - Number of sockets shown on all bases
