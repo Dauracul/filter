@@ -1,37 +1,38 @@
-// DAURACUL'S LOOT FILTER Version 13.0
-// Last updated: 4/23/26
+// DAURACUL'S LOOT FILTER Version 14.0
+// Last updated: 10/19/2026
 // For any bug reports/feedback contact @Dauracul in the PD2 Discord #lootfilter channel
 
-// 13.0
-// Call to Arms can no longer be made in Bows/Crossbows - removed from listed socket recipes on these bases
-// Added new Barb skill Split Throw to staffmods on bases
-// Updated Barb staffmod mastery names to One-Handed and Two-Handed Mastery
-// Enhanced Damage value on Superior Weapons now displays a range of 10-20%
-// Added AR% bonus display on Superior Weapons (10-20% range)
-// Added drop notification for new unique map Djinn's Domain - t57
-// Added drop notification for new unique map Na-Krul's Abyss - t58
-// Added notation for new regular map Kyovoshad and noted its Immunities as Debut Season - t3b
-// Updated S13 Map Immunities
-// Added drop notification for Ears from Corrupted Heroes map event
+// Checklist: 
+// S13 Kyovoshad will need immunes updated (t3b)
+// Review map immunes if there is an immune reshuffle
+// Possibly do something with new grail keywords COMPENDIUM, PREVIEW (compendium slot with no item), GUILDVAULT, TROPHYCASE
+
+// 14.0
+// New maps Poisoned Well, Descent from Mt Arreat, and Dark Temple updated to state no immunes (debut season)
+// Kyovoshad (S13 debut map) still pending immunes
+// TOWN Alias now also includes Guild halls
+// Non-magic bases now display recipes for new Runewords: Finesse, Deception, Madness, Jealousy
+// Jewels now display elemental mastery rolls in item names
+// S14 Alternate Edition skins have been given a unique flavor name and color
 
 
 // LET THE FILTERING BEGIN
 
 // Filter Tier Names
-ItemDisplayFilterName[]:Low Runeword Notes (Displayed on socketed non-magic bases)
-ItemDisplayFilterName[]:Mid Runeword Notes (Displayed on socketed non-magic bases)
-ItemDisplayFilterName[]:High Runeword Notes (Displayed on socketed non-magic bases)
+ItemDisplayFilterName[]:Low Runeword Recipes
+ItemDisplayFilterName[]:Mid Runeword Recipes
+ItemDisplayFilterName[]:High Runeword Recipes
 
 // Release Notes on Identify Scrolls (in Town at Vendors)
-ItemDisplay[isc SHOP]: %NAME%{%NAME%%BLUE%wiki.projectdiablo2.com%NL%%NL%%DARK_GREEN%For full Season 13 patch notes, visit the Project Diablo 2 Wiki:%NL%%DARK_GREEN%(View the filter file for patch notes)%NL%%RED%Season 13: Betrayal%NL%%TAN%Last Updated: 4-23-2026%NL%%NL%%ORANGE%the PD2 Discord #lootfilter channel.%NL%Bug reports or feedback: @Dauracul in%NL%weapon and armor bases. There are no strictness tiers.%NL%Use filter levels to sort through runeword recipes on socketed%NL%%NL%%GOLD%Dauracul's PD2 Loot Filter %RED%v13.0}
+ItemDisplay[isc SHOP]: %NAME%{%NAME%%BLUE%wiki.projectdiablo2.com%NL%%NL%%DARK_GREEN%For full patch notes, visit the Project Diablo 2 Wiki:%NL%%DARK_GREEN%(View the filter file for patch notes)%NL%%YELLOW%Season 14: Alliance%NL%%TAN%Last Updated: 10-19-2026%NL%%NL%%ORANGE%the PD2 Discord #lootfilter channel.%NL%Bug reports or feedback: @Dauracul in%NL%%CORAL%There are no strictness tiers.%NL%%ORANGE%on socketed weapon and armor bases.%NL%Filter levels will sort runeword recipes %NL%%NL%%GOLD%Dauracul's PD2 Loot Filter %YELLOW%v14.0}
 
 // ALIASES
 
 Alias[ALL_UBER_MATS]: (dcso OR dcbl OR dcho OR rtmo OR rtmv OR lucb OR lucc OR lucd OR ubaa OR ubab OR ubac OR pk1 OR pk2 OR pk3 OR dhn OR bey OR mbr)
 
-Alias[ALL_MAPS]: (t11 OR t12 OR t13 OR t14 OR t15 OR t16 OR t17 OR t21 OR t22 OR t23 OR t24 OR t25 OR t26 OR t27 OR t28 OR t31 OR t32 OR t33 OR t34 OR t35 OR t36 OR t37 OR t38 OR t39 OR t3a OR t3b OR t51 OR t52 OR t53 OR t54 OR t55 OR t56 OR t57 OR t58)
+Alias[ALL_MAPS]: (t11 OR t12 OR t13 OR t14 OR t15 OR t16 OR t17 OR t18 OR t21 OR t22 OR t23 OR t24 OR t25 OR t26 OR t27 OR t28 OR t29 OR t2a OR t31 OR t32 OR t33 OR t34 OR t35 OR t36 OR t37 OR t38 OR t39 OR t3a OR t3b OR t51 OR t52 OR t53 OR t54 OR t55 OR t56 OR t57 OR t58)
 
-Alias[ALL_STACKABLE_QTY_ITEMS]: (RUNE>0 OR GEMLEVEL>3 OR wss OR jewf OR t11 OR t12 OR t13 OR t14 OR t15 OR t16 OR t17 OR t21 OR t22 OR t23 OR t24 OR t25 OR t26 OR t27 OR t28 OR t31 OR t32 OR t33 OR t34 OR t35 OR t36 OR t37 OR t38 OR t39 OR t3a OR dcso OR dcbl OR dcho OR rtmo OR rtmv OR lucb OR lucc OR lucd OR ubaa OR ubab OR ubac OR pk1 OR pk2 OR pk3 OR imma OR irma OR imra OR irra OR upma OR urma OR rera OR rrra OR scou OR fort OR upmp OR scrb OR iwss OR lbox OR lpp OR crfb OR crfc OR crfs OR crfh OR crfv OR crfu OR crfp OR dhn OR bey OR mbr OR tes OR ceh OR bet OR fed OR cm2f OR std OR imrn OR cwss)
+Alias[ALL_STACKABLE_QTY_ITEMS]: (RUNE>0 OR GEMLEVEL>3 OR wss OR jewf OR t11 OR t12 OR t13 OR t14 OR t15 OR t16 OR t17 OR t18 OR t21 OR t22 OR t23 OR t24 OR t25 OR t26 OR t27 OR t28 OR t29 OR t2a OR t31 OR t32 OR t33 OR t34 OR t35 OR t36 OR t37 OR t38 OR t39 OR t3a OR dcso OR dcbl OR dcho OR rtmo OR rtmv OR lucb OR lucc OR lucd OR ubaa OR ubab OR ubac OR pk1 OR pk2 OR pk3 OR imma OR irma OR imra OR irra OR upma OR urma OR rera OR rrra OR scou OR fort OR upmp OR scrb OR iwss OR lbox OR lpp OR crfb OR crfc OR crfs OR crfh OR crfv OR crfu OR crfp OR dhn OR bey OR mbr OR tes OR ceh OR bet OR fed OR cm2f OR std OR imrn OR cwss)
 
 Alias[DRUID_STAFFMODS]: (SK221>0 OR SK222>0 OR SK223>0 OR SK224>0 OR SK225>0 OR SK226>0 OR SK227>0 OR SK228>0 OR SK229>0 OR SK230>0 OR SK231>0 OR SK232>0 OR SK233>0 OR SK234>0 OR SK235>0 OR SK236>0 OR SK237>0 OR SK238>0 OR SK239>0 OR SK240>0 OR SK241>0 OR SK242>0 OR SK243>0 OR SK244>0 OR SK245>0 OR SK246>0 OR SK247>0 OR SK248>0 OR SK249>0 OR SK250>0 OR SK370>0)
 
@@ -57,7 +58,7 @@ Alias[THROW_POTS]: (tpfs OR tpgs OR tpcs OR tpls OR tpfm OR tpgm OR tpcm OR tplm
 
 Alias[QUIVERS]: (aqv OR aqv2 OR aqv3 OR cqv OR cqv2 OR cqv3)
 
-Alias[TOWN]: (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)
+Alias[TOWN]: (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109 OR MAPID~202-206)
 
 Alias[PD2Items]: (crfb OR crfc OR crfs OR crfh OR crfv OR crfu OR crfp OR wss OR lbox OR lpp OR iwss OR lsvl OR imrn OR llmr OR imma OR irma OR imra OR irra OR upma OR urma OR rera OR rrra OR scou OR upmp OR scrb OR std OR fort OR iwss OR dcso OR dcbl OR dcho OR rtmo OR rtmv OR lucb OR lucc OR lucd OR ubaa OR ubab OR ubac OR pk1 OR pk2 OR pk3 OR dhn OR bey OR mbr OR t11 OR t12 OR t13 OR t14 OR t15 OR t16 OR t17 OR t21 OR t22 OR t23 OR t24 OR t25 OR t26 OR t27 OR t28 OR t31 OR t32 OR t33 OR t34 OR t35 OR t36 OR t37 OR t38 OR t39 OR t3a OR t51 OR t52 OR t53 OR t54 OR t55 OR t56 OR cm2f OR cwss OR rtp OR rid OR ivea OR ivez OR iveb OR ived OR iven OR ivep OR ives)
 
@@ -129,6 +130,10 @@ ItemDisplay[NMAG INF CLVL<3 EQUIPPED STAFF SORCERESS]: %RED%Ancient Zann Esu Sta
 // Druid
 ItemDisplay[NMAG INF CLVL<3 EQUIPPED CLUB DRUID]: %RED%Rotten Scosglen Branch{%NAME%%CORAL%%NL%This tree will never grow again.%NL%%NL%It is near-death, and barely holds a bond with nature.%NL%A branch of a tree, taken from the College of Túr Dúlra.}
 ItemDisplay[NMAG INF CLVL<3 EQUIPPED SHIELD DRUID]: %RED%Caoi Dúlra Offering{%NAME%%CORAL%Bloodier, more feral offerings will take its place.%NL%%NL%It has been repurposed into a feeble shield.%NL%An old basin, once used to make offerings to the oak Glór-an-Fháidha.} 
+
+
+// S14 Alternate Skins
+ItemDisplay[UNI ID STAT270>0]: %RED%Horadric %BASENAME%%CONTINUE%
 
 
 // Superior Tag on Bases
@@ -403,7 +408,7 @@ ItemDisplay[ALL_MAPS MAG]: %DOT-62%%BLUE%%NAME%%CONTINUE%
 ItemDisplay[ALL_MAPS RARE]: %DOT-A8%%YELLOW%%NAME%%CONTINUE%
 
 // Unique Maps Notice
-ItemDisplay[(t51 OR t52 OR t53 OR t54 OR t55 OR t56 OR t57 OR t58) UNI]: %DOT-61%%GOLD%%NAME%%CONTINUE%
+ItemDisplay[ALL_MAPS UNI]: %DOT-61%%GOLD%%NAME%%CONTINUE%
 
 // Map Recipes
 // Updated and commented out to prevent redundant/duplicate recipe descriptions. S9 added default recipes to many of these items
@@ -455,7 +460,7 @@ ItemDisplay[rrra]: %TEAL%Infused Horadrim Orb%CONTINUE%
 //ItemDisplay[iwss]: %NAME%{%NAME%%BLUE%Map Contains a Random Event%NL%%WHITE%Transmute with a %ORANGE%Map %WHITE%to add %ORANGE%Catalyzed}%CONTINUE%
 
 // Map has Random Event applied (Catalyst Shard)
-ItemDisplay[(t11 OR t12 OR t13 OR t14 OR t15 OR t16 OR t17 OR t21 OR t22 OR t23 OR t24 OR t25 OR t26 OR t27 OR t28 OR t31 OR t32 OR t33 OR t34 OR t35 OR t36 OR t37 OR t38 OR t39 OR t3a OR t3b OR t51 OR t52 OR t53 OR t54 OR t55 OR t56 OR t57 OR t58) STAT500>0]: %NAME%{%NAME%%PURPLE%Catalyzed%CL%}%CONTINUE%
+ItemDisplay[ALL_MAPS STAT500>0]: %NAME%{%NAME%%PURPLE%Catalyzed%CL%}%CONTINUE%
 
 // Gems
 
@@ -517,8 +522,17 @@ ItemDisplay[ALL_STACKABLE_QTY_ITEMS !TOWN QTY>1]: %NAME%%CONTINUE%
 // IMMUNES ON MAPS 
 // Display order should be: Physical Magic Fire Lightning Cold Poison 
 
-//Kyovoshad (S13 Debut)
-ItemDisplay[t3b]: %NAME%{%NAME%%CORAL%None - Debut Season%NL%%WHITE%Immunities:}%CONTINUE%
+//Poisoned Well (S14 Debut)
+ItemDisplay[t18]: %NAME%{%NAME%%CORAL%None - Debut Season%NL%%WHITE%Immunities:}%CONTINUE%
+
+//Dark Temple (S14 Debut)
+ItemDisplay[t29]: %NAME%{%NAME%%CORAL%None - Debut Season%NL%%WHITE%Immunities:}%CONTINUE%
+
+//Descent from Mt Arreat (S14 Debut)
+ItemDisplay[t2a]: %NAME%{%NAME%%CORAL%None - Debut Season%NL%%WHITE%Immunities:}%CONTINUE%
+
+//Kyovoshad (Pending S14 Immunes)
+ItemDisplay[t3b]: %NAME%{%NAME%%CORAL%TBD%NL%%WHITE%Immunities:}%CONTINUE%
 
 //Ruins of Viz-Jun
 ItemDisplay[t11]: %NAME%{%NAME%%GOLD%Physical %BLUE%Cold%NL%%WHITE%Immunities:}%CONTINUE%
@@ -3220,6 +3234,8 @@ ItemDisplay[NMAG HELM SOCK=2 !RW CLVL>26 FILTLVL=1]: %NAME%{%NAME%%TAN%Lore: %OR
 ItemDisplay[NMAG HELM SOCK=3 !RW CLVL<27 FILTLVL=1]: %NAME%{%NAME%%RED%Radiance: Nef Sol Ith (Level 27)%NL%}%CONTINUE%
 ItemDisplay[NMAG HELM SOCK=3 !RW CLVL>26 FILTLVL=1]: %NAME%{%NAME%%TAN%Radiance: %ORANGE%Nef Sol Ith%NL%}%CONTINUE%
 
+ItemDisplay[NMAG HELM SOCK=3 !RW CLVL<41 FILTLVL=2]: %NAME%{%NAME%%RED%Deception: Fal Amn Hel (Level 41)%NL%}%CONTINUE%
+ItemDisplay[NMAG HELM SOCK=3 !RW CLVL>40 FILTLVL=2]: %NAME%{%NAME%%TAN%Deception: %ORANGE%Fal Amn Hel%NL%}%CONTINUE%
 ItemDisplay[NMAG HELM SOCK=3 !RW CLVL<45 FILTLVL=2]: %NAME%{%NAME%%RED%Wisdom: Pul Ith Eld (Level 45)%NL%}%CONTINUE%
 ItemDisplay[NMAG HELM SOCK=3 !RW CLVL>44 FILTLVL=2]: %NAME%{%NAME%%TAN%Wisdom: %ORANGE%Pul Ith Eld%NL%}%CONTINUE%
 ItemDisplay[NMAG HELM SOCK=3 !RW CLVL<51 FILTLVL=2]: %NAME%{%NAME%%RED%Delirium: Lem Ist Io (Level 51)%NL%}%CONTINUE%
@@ -3249,6 +3265,8 @@ ItemDisplay[NMAG CHEST SOCK=3 !RW CLVL<25 FILTLVL=1 BARBARIAN]: %NAME%{%NAME%%RE
 ItemDisplay[NMAG CHEST SOCK=3 !RW CLVL>24 FILTLVL=1 BARBARIAN]: %NAME%{%NAME%%TAN%Myth: %ORANGE%Hel Amn Nef%NL%}%CONTINUE%
 ItemDisplay[NMAG CHEST SOCK=3 !RW CLVL<25 FILTLVL=1 !BARBARIAN]: %NAME%{%NAME%%RED%Myth: Hel Amn Nef (Level 25) (Barbarian)%NL%}%CONTINUE%
 ItemDisplay[NMAG CHEST SOCK=3 !RW CLVL>24 FILTLVL=1 !BARBARIAN]: %NAME%{%NAME%%TAN%Myth: %ORANGE%Hel Amn Nef %RED%(Barbarian)%NL%}%CONTINUE%
+ItemDisplay[NMAG CHEST SOCK=3 !RW CLVL<31 FILTLVL=1]: %NAME%{%NAME%%RED%Finesse: Nef Ral Dol (Level 31)%NL%}%CONTINUE%
+ItemDisplay[NMAG CHEST SOCK=3 !RW CLVL>30 FILTLVL=1]: %NAME%{%NAME%%TAN%Finesse: %ORANGE%Nef Ral Dol%NL%}%CONTINUE%
 
 ItemDisplay[NMAG CHEST SOCK=3 !RW CLVL<39 FILTLVL=2]: %NAME%{%NAME%%RED%Hustle: Shael Ko Eld (Level 39)%NL%}%CONTINUE%
 ItemDisplay[NMAG CHEST SOCK=3 !RW CLVL>38 FILTLVL=2]: %NAME%{%NAME%%TAN%Hustle: %ORANGE%Shael Ko Eld%NL%}%CONTINUE%
@@ -3899,10 +3917,16 @@ ItemDisplay[NMAG THROWING SOCK=3 !RW CLVL<47 FILTLVL=2]: %NAME%{%NAME%%RED%Cresc
 ItemDisplay[NMAG THROWING SOCK=3 !RW CLVL>46 FILTLVL=2]: %NAME%{%NAME%%TAN%Crescent Moon: %ORANGE%Shael Um Tir%NL%}%CONTINUE%
 ItemDisplay[NMAG THROWING SOCK=3 !RW CLVL<49 FILTLVL=3]: %NAME%{%NAME%%RED%Venom: Tal Dol Mal (Level 49)%NL%}%CONTINUE%
 ItemDisplay[NMAG THROWING SOCK=3 !RW CLVL>48 FILTLVL=3]: %NAME%{%NAME%%TAN%Venom: %ORANGE%Tal Dol Mal%NL%}%CONTINUE%
+
+// Zon Javs (S14)
+ItemDisplay[NMAG amf SOCK=3 !RW CLVL<59 FILTLVL=3]: %NAME%{%NAME%%RED%Jealousy: Lo Gul Thul (Level 59)%NL%}%CONTINUE%
+ItemDisplay[NMAG amf SOCK=3 !RW CLVL>58 FILTLVL=3]: %NAME%{%NAME%%TAN%Jealousy: %ORANGE%Lo Gul Thul%NL%}%CONTINUE%
+
 ItemDisplay[NMAG THROWING SOCK=3 !RW CLVL<65 FILTLVL=3]: %NAME%{%NAME%%RED%Fury: Jah Gul Eth (Level 65)%NL%}%CONTINUE%
 ItemDisplay[NMAG THROWING SOCK=3 !RW CLVL>64 FILTLVL=3]: %NAME%{%NAME%%TAN%Fury: %ORANGE%Jah Gul Eth%NL%}%CONTINUE%
 ItemDisplay[NMAG THROWING SOCK=3 !RW CLVL<67 FILTLVL=3]: %NAME%{%NAME%%RED%Plague: Cham Fal Um (Level 67)%NL%}%CONTINUE%
 ItemDisplay[NMAG THROWING SOCK=3 !RW CLVL>66 FILTLVL=3]: %NAME%{%NAME%%TAN%Plague: %ORANGE%Cham Fal Um%NL%}%CONTINUE%
+
 
 // Quivers (S12)
 ItemDisplay[NMAG QUIVERS SOCK=2 !RW CLVL<25 FILTLVL=1]: %NAME%{%NAME%%RED%Ancient's Foresight: Ral Thul (Level 25)%NL%}%CONTINUE%
@@ -3911,6 +3935,10 @@ ItemDisplay[NMAG QUIVERS SOCK=2 !RW CLVL<25 FILTLVL=1]: %NAME%{%NAME%%RED%Ancien
 ItemDisplay[NMAG QUIVERS SOCK=2 !RW CLVL>24 FILTLVL=1]: %NAME%{%NAME%%TAN%Ancient's Scripture: %ORANGE%Tal Ort%NL%}%CONTINUE%
 ItemDisplay[NMAG QUIVERS SOCK=2 !RW CLVL<31 FILTLVL=1]: %NAME%{%NAME%%RED%Echo: Sol Dol (Level 31)%NL%}%CONTINUE%
 ItemDisplay[NMAG QUIVERS SOCK=2 !RW CLVL>30 FILTLVL=1]: %NAME%{%NAME%%TAN%Echo: %ORANGE%Sol Dol%NL%}%CONTINUE%
+
+// All Weapons
+ItemDisplay[NMAG WEAPON SOCK=4 !RW CLVL<61 FILTLVL=3]: %NAME%{%NAME%%RED%Madness: Sur Mal Vex Shael (Level 61)%NL%}%CONTINUE%
+ItemDisplay[NMAG WEAPON SOCK=4 !RW CLVL>60 FILTLVL=3]: %NAME%{%NAME%%TAN%Madness: %ORANGE%Sur Mal Vex Shael%NL%}%CONTINUE%
 
 
 // RUNEWORD TIER NOTES
@@ -6360,6 +6388,18 @@ ItemDisplay[jew RARE !ID]: %DOT-A8%%YELLOW%%NAME%%CONTINUE%
 // Prepare to drop affixes to a new line
 ItemDisplay[jew MAG ID]: %CL%%BLUE%%NAME%{%NAME%%WHITE%Transmute with a Key to create Jewel Fragments}%CONTINUE%
 ItemDisplay[jew RARE ID]: %CL%%YELLOW%%NAME%{%NAME%%WHITE%Transmute with a Key to create Jewel Fragments}%CONTINUE%
+
+// Elemental Mastery
+// Fire
+ItemDisplay[jew (MAG OR RARE) ID STAT329>0]: %RED%%STAT329%%%GRAY%mast %NAME%{%NAME%}%CONTINUE%
+// Lighting
+ItemDisplay[jew (MAG OR RARE) ID STAT330>0]: %YELLOW%%STAT330%%%GRAY%mast %NAME%{%NAME%}%CONTINUE%
+// Cold
+ItemDisplay[jew (MAG OR RARE) ID STAT331>0]: %BLUE%%STAT331%%%GRAY%mast %NAME%{%NAME%}%CONTINUE%
+// Poison
+ItemDisplay[jew (MAG OR RARE) ID STAT332>0]: %GREEN%%STAT332%%%GRAY%mast %NAME%{%NAME%}%CONTINUE%
+// Magic
+ItemDisplay[jew (MAG OR RARE) ID STAT357>0]: %ORANGE%%STAT357%%%GRAY%mast %NAME%{%NAME%}%CONTINUE%
 
 // Mana and Life Per Kill
 ItemDisplay[jew (MAG OR RARE) ID MAEK>0]: %BLUE%%MAEK%%GRAY%maek %NAME%{%NAME%}%CONTINUE%
