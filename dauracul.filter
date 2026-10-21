@@ -133,7 +133,7 @@ ItemDisplay[NMAG INF CLVL<3 EQUIPPED SHIELD DRUID]: %RED%Caoi Dúlra Offering{%N
 
 
 // S14 Alternate Skins
-ItemDisplay[UNI ID STAT270>0]: %RED%Horadric %BASENAME%%CONTINUE%
+ItemDisplay[UNI ID STAT270>0]: %RED%Horadric %NAME%%CONTINUE%
 
 
 // Superior Tag on Bases
