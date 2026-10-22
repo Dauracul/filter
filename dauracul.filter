@@ -8,7 +8,7 @@
 // Possibly do something with new grail keywords COMPENDIUM, PREVIEW (compendium slot with no item), GUILDVAULT, TROPHYCASE
 
 // 14.0
-// New maps Poisoned Well, Descent from Mt Arreat, and Dark Temple updated to state no immunes (debut season)
+// New maps Poisoned Well, Descent from Mt Arreat, and Fortress of Aranoch updated to state no immunes (debut season)
 // Kyovoshad (S13 debut map) still pending immunes
 // TOWN Alias now also includes Guild halls
 // Non-magic bases now display recipes for new Runewords: Finesse, Deception, Madness, Jealousy
@@ -525,7 +525,7 @@ ItemDisplay[ALL_STACKABLE_QTY_ITEMS !TOWN QTY>1]: %NAME%%CONTINUE%
 //Poisoned Well (S14 Debut)
 ItemDisplay[t18]: %NAME%{%NAME%%CORAL%None - Debut Season%NL%%WHITE%Immunities:}%CONTINUE%
 
-//Dark Temple (S14 Debut)
+//Fortress of Aranoch (S14 Debut)
 ItemDisplay[t29]: %NAME%{%NAME%%CORAL%None - Debut Season%NL%%WHITE%Immunities:}%CONTINUE%
 
 //Descent from Mt Arreat (S14 Debut)
