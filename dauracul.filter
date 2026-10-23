@@ -3,8 +3,6 @@
 // For any bug reports/feedback contact @Dauracul in the PD2 Discord #lootfilter channel
 
 // Checklist: 
-// S13 Kyovoshad will need immunes updated (t3b)
-// Review map immunes if there is an immune reshuffle
 // Possibly do something with new grail keywords COMPENDIUM, PREVIEW (compendium slot with no item), GUILDVAULT, TROPHYCASE
 
 // 14.0
@@ -14,6 +12,7 @@
 // Non-magic bases now display recipes for new Runewords: Finesse, Deception, Madness, Jealousy
 // Jewels now display elemental mastery rolls in item names
 // S14 Alternate Edition skins have been given a unique flavor name and color
+// Updated immunes on S13 map Kyovoshad (t3b)
 
 
 // LET THE FILTERING BEGIN
@@ -531,8 +530,8 @@ ItemDisplay[t29]: %NAME%{%NAME%%CORAL%None - Debut Season%NL%%WHITE%Immunities:}
 //Descent from Mt Arreat (S14 Debut)
 ItemDisplay[t2a]: %NAME%{%NAME%%CORAL%None - Debut Season%NL%%WHITE%Immunities:}%CONTINUE%
 
-//Kyovoshad (Pending S14 Immunes)
-ItemDisplay[t3b]: %NAME%{%NAME%%CORAL%TBD%NL%%WHITE%Immunities:}%CONTINUE%
+//Kyovoshad
+ItemDisplay[t3b]: %NAME%{%NAME%%ORANGE%Magic %RED%Fire %YELLOW%Lightning%NL%%WHITE%Immunities:}%CONTINUE%
 
 //Ruins of Viz-Jun
 ItemDisplay[t11]: %NAME%{%NAME%%GOLD%Physical %BLUE%Cold%NL%%WHITE%Immunities:}%CONTINUE%
