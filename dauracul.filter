@@ -1,5 +1,5 @@
 // DAURACUL'S LOOT FILTER Version 14.0
-// Last updated: 10/19/2026
+// Last updated: 10/22/2026
 // For any bug reports/feedback contact @Dauracul in the PD2 Discord #lootfilter channel
 
 // Checklist: 
@@ -23,7 +23,7 @@ ItemDisplayFilterName[]:Mid Runeword Recipes
 ItemDisplayFilterName[]:High Runeword Recipes
 
 // Release Notes on Identify Scrolls (in Town at Vendors)
-ItemDisplay[isc SHOP]: %NAME%{%NAME%%BLUE%wiki.projectdiablo2.com%NL%%NL%%DARK_GREEN%For full patch notes, visit the Project Diablo 2 Wiki:%NL%%DARK_GREEN%(View the filter file for patch notes)%NL%%YELLOW%Season 14: Alliance%NL%%TAN%Last Updated: 10-19-2026%NL%%NL%%ORANGE%the PD2 Discord #lootfilter channel.%NL%Bug reports or feedback: @Dauracul in%NL%%CORAL%There are no strictness tiers.%NL%%ORANGE%on socketed weapon and armor bases.%NL%Filter levels will sort runeword recipes %NL%%NL%%GOLD%Dauracul's PD2 Loot Filter %YELLOW%v14.0}
+ItemDisplay[isc SHOP]: %NAME%{%NAME%%BLUE%wiki.projectdiablo2.com%NL%%NL%%DARK_GREEN%For full patch notes, visit the Project Diablo 2 Wiki:%NL%%DARK_GREEN%(View the filter file for patch notes)%NL%%YELLOW%Season 14: Alliance%NL%%TAN%Last Updated: 10-22-2026%NL%%NL%%ORANGE%the PD2 Discord #lootfilter channel.%NL%Bug reports or feedback: @Dauracul in%NL%%CORAL%There are no strictness tiers.%NL%%ORANGE%on socketed weapon and armor bases.%NL%Filter levels will sort runeword recipes %NL%%NL%%GOLD%Dauracul's PD2 Loot Filter %YELLOW%v14.0}
 
 // ALIASES
 
